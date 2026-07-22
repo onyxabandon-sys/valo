@@ -1,0 +1,2 @@
+-keep class com.valetpos.** { *; }
+-keep class com.facebook.react.** { *; }

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["react", "react-native", "node"]
+  },
+  "include": ["src", "App.tsx"]
+}
