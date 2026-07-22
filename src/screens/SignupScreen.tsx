@@ -8,12 +8,13 @@ type Props = {
   locationName: string;
   code: string;
   error: string;
+  isLoading: boolean;
   onEmailChange: (value: string) => void;
   onPasswordChange: (value: string) => void;
   onConfirmPasswordChange: (value: string) => void;
   onLocationChange: (value: string) => void;
   onCodeChange: (value: string) => void;
-  onSubmit: () => void;
+  onSubmit: () => void | Promise<void>;
 };
 
 export function SignupScreen({
@@ -23,6 +24,7 @@ export function SignupScreen({
   locationName,
   code,
   error,
+  isLoading,
   onEmailChange,
   onPasswordChange,
   onConfirmPasswordChange,
@@ -69,8 +71,8 @@ export function SignupScreen({
             </View>
           )}
 
-          <TouchableOpacity style={styles.button} onPress={onSubmit} activeOpacity={0.9}>
-            <Text style={styles.buttonText}>Create account</Text>
+          <TouchableOpacity style={[styles.button, isLoading ? styles.buttonDisabled : null]} onPress={onSubmit} disabled={isLoading} activeOpacity={0.9}>
+            <Text style={styles.buttonText}>{isLoading ? 'Creating...' : 'Create account'}</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -134,6 +136,6 @@ const styles = StyleSheet.create({
   },
   errorText: { color: '#B91C1C', fontSize: 13, lineHeight: 18 },
   button: { backgroundColor: '#2563EB', borderRadius: 18, paddingVertical: 16, alignItems: 'center', marginTop: 4 },
+  buttonDisabled: { backgroundColor: '#94A3B8' },
   buttonText: { color: '#FFFFFF', fontWeight: '800', fontSize: 17 },
 });
-

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -12,13 +12,13 @@ import { SignupScreen } from '../screens/SignupScreen';
 import { SlipScreen } from '../screens/SlipScreen';
 import { VehicleFormScreen } from '../screens/VehicleFormScreen';
 import { VehicleTypeScreen } from '../screens/VehicleTypeScreen';
-import { adminSeed, userSeed, VEHICLE_RATES } from '../data/seed';
+import { userSeed, VEHICLE_RATES } from '../data/seed';
 import { createTicket } from '../lib/appFlows';
 import { buildReportExport } from '../lib/reportExport';
 import { useAppStore } from '../store/useAppStore';
 import { RootStackParamList } from './types';
 import { SunmiNative } from '../native/SunmiBridge';
-import { useCreateConvexTicket, useDailyReport, useTicketByClientId, useUserByEmail } from '../data/convexHooks';
+import { useCreateConvexTicket, useCreateOrganization, useDailyReport, useLocationById, useTicketByClientId, useUserByEmail } from '../data/convexHooks';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 const Tab = createBottomTabNavigator();
@@ -81,7 +81,16 @@ function HomeTabs() {
       />
       <Tab.Screen
         name="Profile"
-        children={({ navigation }) => <ProfileScreen user={store.user} onLogout={() => navigation.navigate('Login' as never)} />}
+        children={() => (
+          <ProfileScreen
+            user={store.user}
+            onLogout={() => {
+              store.setAuthenticated(false);
+              store.setGeneratedTicket(null);
+              store.setBarcodeQuery('');
+            }}
+          />
+        )}
       />
     </Tab.Navigator>
   );
@@ -99,48 +108,68 @@ function BootstrapGate() {
 export function RootNavigator() {
   const store = useAppStore();
   const signedInUser: any = useUserByEmail(store.loginEmail);
-  const userLookupLoading = store.loginEmail.trim() !== '' && signedInUser === undefined;
+  const signedInLocation: any = useLocationById(signedInUser?.locationId ?? '');
+  const userLookupLoading = store.loginEmail.trim() !== '' && (signedInUser === undefined || (signedInUser?.locationId && signedInLocation === undefined));
   const ticketFromConvex: any = useTicketByClientId(store.barcodeQuery);
   const createConvexTicket = useCreateConvexTicket();
+  const createOrganization = useCreateOrganization();
+  const [signupLoading, setSignupLoading] = useState(false);
 
   const submitVehicle = async () => {
-    const ticket = createTicket({
-      vehicleType: store.selectedVehicle,
-      vehicleNumber: store.vehicleNumber,
-      amount: Number(store.selectedAmount),
-      existingCount: store.tickets.length,
-    });
-    await createConvexTicket({
-      clientId: ticket.id,
-      locationId: store.user.locationId as any,
-      ticketNumber: ticket.ticketNumber,
-      vehicleType: ticket.vehicleType as any,
-      vehicleNumber: ticket.vehicleNumber,
-      amount: ticket.amount,
-      paymentStatus: 'paid',
-      paymentMethod: 'cash',
-      createdByUserId: signedInUser._id,
-    });
-    store.setGeneratedTicket(ticket);
-    store.setBarcodeQuery(ticket.id);
-    store.setTickets([ticket, ...store.tickets]);
-    await SunmiNative.printSlip({
-      ticketId: ticket.id,
-      ticketNumber: ticket.ticketNumber,
-      vehicleNumber: ticket.vehicleNumber,
-      vehicleType: ticket.vehicleType,
-      locationName: ticket.locationName,
-      amount: ticket.amount,
-      paymentStatus: ticket.paymentStatus,
-      createdAt: ticket.createdAt,
-      barcodeValue: ticket.id,
-    });
+    try {
+      if (!signedInUser?._id || !store.user.locationId) {
+        store.setError('Your account is missing location access. Sign in again.');
+        return false;
+      }
+
+      const ticket = createTicket({
+        vehicleType: store.selectedVehicle,
+        vehicleNumber: store.vehicleNumber,
+        amount: Number(store.selectedAmount),
+        existingCount: store.tickets.length,
+        locationName: store.user.locationName,
+      });
+      await createConvexTicket({
+        clientId: ticket.id,
+        locationId: store.user.locationId as any,
+        ticketNumber: ticket.ticketNumber,
+        vehicleType: ticket.vehicleType as any,
+        vehicleNumber: ticket.vehicleNumber,
+        amount: ticket.amount,
+        paymentStatus: 'paid',
+        paymentMethod: 'cash',
+        createdByUserId: signedInUser._id,
+      });
+      store.setGeneratedTicket(ticket);
+      store.setBarcodeQuery(ticket.id);
+      store.setTickets([ticket, ...store.tickets]);
+      store.setError('');
+      try {
+        await SunmiNative.printSlip({
+          ticketId: ticket.id,
+          ticketNumber: ticket.ticketNumber,
+          vehicleNumber: ticket.vehicleNumber,
+          vehicleType: ticket.vehicleType,
+          locationName: ticket.locationName,
+          amount: ticket.amount,
+          paymentStatus: ticket.paymentStatus,
+          createdAt: ticket.createdAt,
+          barcodeValue: ticket.id,
+        });
+      } catch {
+        store.setError('Ticket created. Printing failed; open the slip to retry.');
+      }
+      return true;
+    } catch (error) {
+      store.setError(error instanceof Error && error.message === 'INVALID_VEHICLE_NUMBER' ? 'Enter a valid vehicle number.' : 'Could not create ticket. Try again.');
+      return false;
+    }
   };
 
   return (
     <NavigationContainer>
       <BootstrapGate />
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Navigator key={store.authenticated ? 'app' : 'auth'} screenOptions={{ headerShown: false }}>
         {!store.authenticated ? (
           <>
             <Stack.Screen
@@ -170,8 +199,8 @@ export function RootNavigator() {
                       email: signedInUser.email,
                       role: signedInUser.role,
                       locationId: signedInUser.locationId ?? undefined,
-                      locationName: signedInUser.role === 'admin' ? adminSeed.locationName : store.user.locationName,
-                      locationAddress: signedInUser.role === 'admin' ? adminSeed.locationAddress : store.user.locationAddress,
+                      locationName: signedInLocation?.name ?? store.user.locationName,
+                      locationAddress: signedInLocation?.address ?? store.user.locationAddress,
                       employeeId: signedInUser.employeeId ?? store.user.employeeId,
                       phone: signedInUser.phone ?? store.user.phone,
                       joinedAt: signedInUser.joinedAt ?? store.user.joinedAt,
@@ -196,132 +225,191 @@ export function RootNavigator() {
                   locationName={store.signupLocation}
                   code={store.signupCode}
                   error={store.error}
+                  isLoading={signupLoading}
                   onEmailChange={store.setSignupEmail}
                   onPasswordChange={store.setSignupPassword}
                   onConfirmPasswordChange={store.setSignupConfirm}
                   onLocationChange={store.setSignupLocation}
                   onCodeChange={store.setSignupCode}
-                  onSubmit={() => {
-                    store.setAuthenticated(true);
-                    navigation.navigate('MainTabs');
+                  onSubmit={async () => {
+                    if (signupLoading) {
+                      return;
+                    }
+                    const email = store.signupEmail.trim().toLowerCase();
+                    const locationName = store.signupLocation.trim();
+                    const organizationCode = store.signupCode.trim();
+                    if (!email || !locationName || !organizationCode || !store.signupPassword) {
+                      store.setError('Fill in every field to create an account.');
+                      return;
+                    }
+                    if (!email.includes('@')) {
+                      store.setError('Enter a valid email address.');
+                      return;
+                    }
+                    if (store.signupPassword !== store.signupConfirm) {
+                      store.setError('Passwords do not match.');
+                      return;
+                    }
+                    setSignupLoading(true);
+                    try {
+                      const result = await createOrganization({
+                        email,
+                        passwordHash: store.signupPassword,
+                        locationName,
+                        organizationCode,
+                      });
+                      if (!result.user || !result.location) {
+                        store.setError('Could not create account. Try again.');
+                        return;
+                      }
+                      store.setUser({
+                        name: result.user.name,
+                        email: result.user.email,
+                        role: result.user.role,
+                        locationId: result.user.locationId,
+                        locationName: result.location.name,
+                        locationAddress: result.location.address ?? locationName,
+                        employeeId: store.user.employeeId,
+                        phone: store.user.phone,
+                        joinedAt: new Date().toLocaleDateString(),
+                        gps: store.user.gps,
+                        status: 'Active',
+                      });
+                      store.setLoginEmail(result.user.email);
+                      store.setLoginPassword(store.signupPassword);
+                      store.setTickets([]);
+                      store.setGeneratedTicket(null);
+                      store.setBarcodeQuery('');
+                      store.setError('');
+                      store.setAuthenticated(true);
+                      navigation.navigate('MainTabs');
+                    } catch (error) {
+                      store.setError(error instanceof Error ? error.message : 'Could not create account. Try again.');
+                    } finally {
+                      setSignupLoading(false);
+                    }
                   }}
                 />
               )}
             />
           </>
-        ) : null}
-        <Stack.Screen name="MainTabs" component={HomeTabs} />
-        <Stack.Screen
-          name="VehicleTypes"
-          children={({ navigation }) => (
-            <VehicleTypeScreen
-              selectedVehicle={store.selectedVehicle}
-              onContinue={vehicle => {
-                store.setSelectedVehicle(vehicle);
-                store.setSelectedAmount(VEHICLE_RATES[vehicle].toFixed(2));
-                navigation.navigate('VehicleForm');
-              }}
-              onBack={() => navigation.goBack()}
+        ) : (
+          <>
+            <Stack.Screen name="MainTabs" component={HomeTabs} />
+            <Stack.Screen
+              name="VehicleTypes"
+              children={({ navigation }) => (
+                <VehicleTypeScreen
+                  selectedVehicle={store.selectedVehicle}
+                  onContinue={vehicle => {
+                    store.setSelectedVehicle(vehicle);
+                    store.setSelectedAmount(VEHICLE_RATES[vehicle].toFixed(2));
+                    navigation.navigate('VehicleForm');
+                  }}
+                  onBack={() => navigation.goBack()}
+                />
+              )}
             />
-          )}
-        />
-        <Stack.Screen
-          name="VehicleForm"
-          children={({ navigation }) => (
-            <VehicleFormScreen
-              vehicleType={store.selectedVehicle}
-              vehicleNumber={store.vehicleNumber}
-              amount={store.selectedAmount}
-              locationName={store.user.locationName}
-              error={store.error}
-              onVehicleNumberChange={store.setVehicleNumber}
-              onAmountChange={store.setSelectedAmount}
-              onSubmit={async () => {
-                await submitVehicle();
-                navigation.navigate('Slip');
-              }}
-              onBack={() => navigation.goBack()}
-            />
-          )}
-        />
-        <Stack.Screen
-          name="Slip"
-          children={({ navigation }) =>
-            store.generatedTicket ? (
-              <SlipScreen
-                ticket={store.generatedTicket}
-                onPrint={async () => {
-                  await SunmiNative.printSlip({
-                    ticketId: store.generatedTicket!.id,
-                    ticketNumber: store.generatedTicket!.ticketNumber,
-                    vehicleNumber: store.generatedTicket!.vehicleNumber,
-                    vehicleType: store.generatedTicket!.vehicleType,
-                    locationName: store.generatedTicket!.locationName,
-                    amount: store.generatedTicket!.amount,
-                    paymentStatus: store.generatedTicket!.paymentStatus,
-                    createdAt: store.generatedTicket!.createdAt,
-                    barcodeValue: store.generatedTicket!.id,
-                  });
-                }}
-                onNewSale={() => {
-                  store.setGeneratedTicket(null);
-                  store.setBarcodeQuery('');
-                  navigation.navigate('MainTabs');
-                }}
-              />
-            ) : (
-              <View />
-            )
-          }
-        />
-        <Stack.Screen
-          name="Lookup"
-          children={({ navigation }) => (
-            <LookupScreen
-              query={store.barcodeQuery}
-              ticket={
-                ticketFromConvex
-                  ? {
-                      id: ticketFromConvex._id,
-                      ticketNumber: ticketFromConvex.ticketNumber,
-                      vehicleType: ticketFromConvex.vehicleType,
-                      vehicleNumber: ticketFromConvex.vehicleNumber,
-                      amount: ticketFromConvex.amount,
-                      createdAt: new Date(ticketFromConvex.createdAt).toISOString(),
-                      locationName: userSeed.locationName,
-                      paymentStatus: 'paid',
-                      paymentMethod: ticketFromConvex.paymentMethod,
+            <Stack.Screen
+              name="VehicleForm"
+              children={({ navigation }) => (
+                <VehicleFormScreen
+                  vehicleType={store.selectedVehicle}
+                  vehicleNumber={store.vehicleNumber}
+                  amount={store.selectedAmount}
+                  locationName={store.user.locationName}
+                  error={store.error}
+                  onVehicleNumberChange={store.setVehicleNumber}
+                  onAmountChange={store.setSelectedAmount}
+                  onSubmit={async () => {
+                    if (await submitVehicle()) {
+                      navigation.navigate('Slip');
                     }
-                  : null
+                  }}
+                  onBack={() => navigation.goBack()}
+                />
+              )}
+            />
+            <Stack.Screen
+              name="Slip"
+              children={({ navigation }) =>
+                store.generatedTicket ? (
+                  <SlipScreen
+                    ticket={store.generatedTicket}
+                    onPrint={async () => {
+                      await SunmiNative.printSlip({
+                        ticketId: store.generatedTicket!.id,
+                        ticketNumber: store.generatedTicket!.ticketNumber,
+                        vehicleNumber: store.generatedTicket!.vehicleNumber,
+                        vehicleType: store.generatedTicket!.vehicleType,
+                        locationName: store.generatedTicket!.locationName,
+                        amount: store.generatedTicket!.amount,
+                        paymentStatus: store.generatedTicket!.paymentStatus,
+                        createdAt: store.generatedTicket!.createdAt,
+                        barcodeValue: store.generatedTicket!.id,
+                      });
+                    }}
+                    onNewSale={() => {
+                      store.setGeneratedTicket(null);
+                      store.setBarcodeQuery('');
+                      navigation.navigate('MainTabs');
+                    }}
+                  />
+                ) : (
+                  <View />
+                )
               }
-              onQueryChange={store.setBarcodeQuery}
-              onBack={() => navigation.goBack()}
             />
-          )}
-        />
-        <Stack.Screen
-          name="Report"
-          children={({ navigation }) => (
-            <ReportScreen
-              tickets={store.tickets}
-              report={null}
-              onBack={() => navigation.goBack()}
+            <Stack.Screen
+              name="Lookup"
+              children={({ navigation }) => (
+                <LookupScreen
+                  query={store.barcodeQuery}
+                  ticket={
+                    ticketFromConvex
+                      ? {
+                          id: ticketFromConvex._id,
+                          ticketNumber: ticketFromConvex.ticketNumber,
+                          vehicleType: ticketFromConvex.vehicleType,
+                          vehicleNumber: ticketFromConvex.vehicleNumber,
+                          amount: ticketFromConvex.amount,
+                          createdAt: new Date(ticketFromConvex.createdAt).toISOString(),
+                          locationName: userSeed.locationName,
+                          paymentStatus: 'paid',
+                          paymentMethod: ticketFromConvex.paymentMethod,
+                        }
+                      : null
+                  }
+                  onQueryChange={store.setBarcodeQuery}
+                  onBack={() => navigation.goBack()}
+                />
+              )}
             />
-          )}
-        />
-        <Stack.Screen
-          name="Profile"
-          children={({ navigation }) => (
-            <ProfileScreen
-              user={store.user}
-              onLogout={() => {
-                store.setAuthenticated(false);
-                store.setGeneratedTicket(null);
-                navigation.navigate('Login');
-              }}
+            <Stack.Screen
+              name="Report"
+              children={({ navigation }) => (
+                <ReportScreen
+                  tickets={store.tickets}
+                  report={null}
+                  onBack={() => navigation.goBack()}
+                />
+              )}
             />
-          )}
-        />
+            <Stack.Screen
+              name="Profile"
+              children={() => (
+                <ProfileScreen
+                  user={store.user}
+                  onLogout={() => {
+                    store.setAuthenticated(false);
+                    store.setGeneratedTicket(null);
+                    store.setBarcodeQuery('');
+                  }}
+                />
+              )}
+            />
+          </>
+        )}
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -6,7 +6,7 @@ export const createTicket = mutation({
     clientId: v.string(),
     locationId: v.id('locations'),
     ticketNumber: v.string(),
-    vehicleType: v.union(v.literal('Car'), v.literal('Bike')),
+    vehicleType: v.union(v.literal('Car'), v.literal('Bike'), v.literal('Commercial Vehicle'), v.literal('Bus'), v.literal('Heavy Vehicle'), v.literal('Tractor')),
     vehicleNumber: v.string(),
     amount: v.number(),
     paymentStatus: v.union(v.literal('paid'), v.literal('void')),

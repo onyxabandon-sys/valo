@@ -15,6 +15,7 @@ export function createTicket(params: {
   vehicleNumber: string;
   amount?: number;
   existingCount: number;
+  locationName?: string;
 }): Ticket {
   const amount = params.amount ?? VEHICLE_RATES[params.vehicleType];
   if (!isValidVehicleNumber(params.vehicleNumber)) {
@@ -31,7 +32,7 @@ export function createTicket(params: {
     vehicleNumber: params.vehicleNumber.trim().toUpperCase(),
     amount,
     createdAt: new Date().toISOString(),
-    locationName: userSeed.locationName,
+    locationName: params.locationName ?? userSeed.locationName,
     paymentStatus: 'paid',
     paymentMethod: 'cash',
   };

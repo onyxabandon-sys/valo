@@ -9,6 +9,7 @@ export const convexSchema = {
   locations: {
     name: 'string',
     logoUrl: 'string?',
+    organizationCode: 'string?',
     gps: 'object?',
     address: 'string?',
     ownerUserId: 'id(users)',
@@ -18,7 +19,7 @@ export const convexSchema = {
     clientId: 'string',
     locationId: 'id(locations)',
     ticketNumber: 'string',
-    vehicleType: 'Car|Bike',
+    vehicleType: 'Car|Bike|Commercial Vehicle|Bus|Heavy Vehicle|Tractor',
     vehicleNumber: 'string',
     amount: 'number',
     paymentStatus: 'paid|void',

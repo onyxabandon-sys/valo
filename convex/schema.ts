@@ -18,6 +18,7 @@ export default defineSchema({
   locations: defineTable({
     name: v.string(),
     logoUrl: v.optional(v.string()),
+    organizationCode: v.optional(v.string()),
     gps: v.optional(
       v.object({
         lat: v.number(),
@@ -27,13 +28,15 @@ export default defineSchema({
     address: v.optional(v.string()),
     ownerUserId: v.optional(v.id('users')),
     createdAt: v.number(),
-  }).index('by_owner', ['ownerUserId']),
+  })
+    .index('by_owner', ['ownerUserId'])
+    .index('by_organization_code', ['organizationCode']),
 
   tickets: defineTable({
     clientId: v.string(),
     locationId: v.id('locations'),
     ticketNumber: v.string(),
-    vehicleType: v.union(v.literal('Car'), v.literal('Bike')),
+    vehicleType: v.union(v.literal('Car'), v.literal('Bike'), v.literal('Commercial Vehicle'), v.literal('Bus'), v.literal('Heavy Vehicle'), v.literal('Tractor')),
     vehicleNumber: v.string(),
     amount: v.number(),
     paymentStatus: v.union(v.literal('paid'), v.literal('void')),
