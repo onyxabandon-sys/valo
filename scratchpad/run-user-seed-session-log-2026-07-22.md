@@ -5,3 +5,6 @@
 2026-07-22T15:12:00+05:00 - Started follow-up to add Convex receipt and report snapshot tables, make demo seed idempotent, and push to local Convex.
 2026-07-22T15:08:35+05:00 - Pushed updated schema/functions to local Convex. Added `receipts` and `reportSnapshots` indexes and seeded five users, five receipts, and one report snapshot.
 2026-07-22T15:09:00+05:00 - Verified local Convex rows: five users, five receipts with customer names, and one `2026-07-22` report snapshot with `cashRevenue: 190`.
+2026-07-22T15:17:32+05:00 - User provided hosted Convex URL `https://fastidious-chipmunk-862.convex.cloud/`. Updated `.env` target and prepared to push/seed deployment `fastidious-chipmunk-862`.
+2026-07-22T15:18:04+05:00 - Ran `npx convex run --deployment fastidious-chipmunk-862 seedDemoData:seedDemoData --push`; hosted Convex returned five users, five tickets, five receipts, and one report snapshot.
+2026-07-22T15:19:00+05:00 - Verified hosted `fastidious-chipmunk-862` contains five users, five receipts, and one `2026-07-22` report snapshot with `cashRevenue: 190`.
