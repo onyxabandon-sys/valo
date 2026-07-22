@@ -99,6 +99,7 @@ function BootstrapGate() {
 export function RootNavigator() {
   const store = useAppStore();
   const signedInUser: any = useUserByEmail(store.loginEmail);
+  const userLookupLoading = store.loginEmail.trim() !== '' && signedInUser === undefined;
   const ticketFromConvex: any = useTicketByClientId(store.barcodeQuery);
   const createConvexTicket = useCreateConvexTicket();
 
@@ -149,9 +150,13 @@ export function RootNavigator() {
                   email={store.loginEmail}
                   password={store.loginPassword}
                   error={store.error}
+                  isLoading={userLookupLoading}
                   onEmailChange={store.setLoginEmail}
                   onPasswordChange={store.setLoginPassword}
                   onLogin={() => {
+                    if (userLookupLoading) {
+                      return;
+                    }
                     if (!signedInUser) {
                       store.setError('No account found for that email.');
                       return;

@@ -1,5 +1,40 @@
-import { mutation } from './_generated/server';
+import { mutation, type MutationCtx } from './_generated/server';
 import { Id } from './_generated/dataModel';
+
+function normalizeEmail(email: string) {
+  return email.trim().toLowerCase();
+}
+
+async function findUserByEmail(ctx: MutationCtx, email: string) {
+  const normalizedEmail = normalizeEmail(email);
+  const candidates = Array.from(new Set([normalizedEmail, email.trim(), email]));
+
+  const normalizedUser = await ctx.db
+    .query('users')
+    .withIndex('by_email_normalized', q => q.eq('emailNormalized', normalizedEmail))
+    .first();
+  if (normalizedUser) {
+    return normalizedUser;
+  }
+
+  for (const candidate of candidates) {
+    const user = await ctx.db
+      .query('users')
+      .withIndex('by_email', q => q.eq('email', candidate))
+      .first();
+    if (user) {
+      return user;
+    }
+  }
+
+  for await (const user of ctx.db.query('users')) {
+    if (normalizeEmail(user.email) === normalizedEmail) {
+      return user;
+    }
+  }
+
+  return null;
+}
 
 export const seedDemoData = mutation({
   args: {},
@@ -7,10 +42,7 @@ export const seedDemoData = mutation({
     const now = Date.now();
     const reportDate = new Date(now).toISOString().slice(0, 10);
 
-    const existingAdmin = await ctx.db
-      .query('users')
-      .withIndex('by_email', q => q.eq('email', 'arsalan.valet@demo.local'))
-      .first();
+    const existingAdmin = await findUserByEmail(ctx, 'arsalan.valet@demo.local');
     let locationId = existingAdmin?.locationId;
 
     if (!locationId) {
@@ -56,14 +88,22 @@ export const seedDemoData = mutation({
 
     const userIds: Array<Id<'users'>> = [];
     for (const user of users) {
-      const existingUser = await ctx.db
-        .query('users')
-        .withIndex('by_email', q => q.eq('email', user.email))
-        .first();
+      const email = normalizeEmail(user.email);
+      const existingUser = await findUserByEmail(ctx, user.email);
+
+      if (existingUser && (existingUser.emailNormalized !== email || !existingUser.locationId)) {
+        await ctx.db.patch(existingUser._id, {
+          emailNormalized: email,
+          locationId: existingUser.locationId ?? locationId,
+        });
+      }
+
       const userId =
         existingUser?._id ??
         (await ctx.db.insert('users', {
           ...user,
+          email,
+          emailNormalized: email,
           locationId,
           createdAt: now,
         }));

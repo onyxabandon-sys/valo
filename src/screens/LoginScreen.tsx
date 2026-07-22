@@ -5,13 +5,14 @@ type Props = {
   email: string;
   password: string;
   error: string;
+  isLoading: boolean;
   onEmailChange: (value: string) => void;
   onPasswordChange: (value: string) => void;
   onLogin: () => void;
   onSignup: () => void;
 };
 
-export function LoginScreen({ email, password, error, onEmailChange, onPasswordChange, onLogin, onSignup }: Props) {
+export function LoginScreen({ email, password, error, isLoading, onEmailChange, onPasswordChange, onLogin, onSignup }: Props) {
   return (
     <SafeAreaView style={styles.safe}>
       <StatusBar barStyle="light-content" />
@@ -54,8 +55,8 @@ export function LoginScreen({ email, password, error, onEmailChange, onPasswordC
             </View>
           )}
 
-          <TouchableOpacity style={styles.button} onPress={onLogin} activeOpacity={0.9}>
-            <Text style={styles.buttonText}>Sign in</Text>
+          <TouchableOpacity style={[styles.button, isLoading ? styles.buttonDisabled : null]} onPress={onLogin} disabled={isLoading} activeOpacity={0.9}>
+            <Text style={styles.buttonText}>{isLoading ? 'Checking...' : 'Sign in'}</Text>
           </TouchableOpacity>
 
           <TouchableOpacity onPress={onSignup} style={styles.linkRow}>
@@ -128,6 +129,7 @@ const styles = StyleSheet.create({
   },
   errorText: { color: '#B91C1C', fontSize: 13, lineHeight: 18 },
   button: { backgroundColor: '#2563EB', borderRadius: 18, paddingVertical: 16, alignItems: 'center', marginTop: 4 },
+  buttonDisabled: { backgroundColor: '#94A3B8' },
   buttonText: { color: '#FFFFFF', fontWeight: '800', fontSize: 17 },
   linkRow: { alignItems: 'center', marginTop: 18, gap: 4 },
   linkLabel: { color: '#64748B', fontSize: 13 },

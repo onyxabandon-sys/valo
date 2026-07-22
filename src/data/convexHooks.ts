@@ -15,7 +15,7 @@ export function useTicketByClientId(clientId: string) {
 }
 
 export function useUserByEmail(email: string) {
-  return useQuery(api.users.getUserByEmail, email ? { email } : 'skip');
+  return useQuery(api.users.getUserByEmail, email.trim() ? { email } : 'skip');
 }
 
 export async function createConvexTicket(ticket: Ticket) {

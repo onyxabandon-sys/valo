@@ -8,3 +8,23 @@
 2026-07-22T15:17:32+05:00 - User provided hosted Convex URL `https://fastidious-chipmunk-862.convex.cloud/`. Updated `.env` target and prepared to push/seed deployment `fastidious-chipmunk-862`.
 2026-07-22T15:18:04+05:00 - Ran `npx convex run --deployment fastidious-chipmunk-862 seedDemoData:seedDemoData --push`; hosted Convex returned five users, five tickets, five receipts, and one report snapshot.
 2026-07-22T15:19:00+05:00 - Verified hosted `fastidious-chipmunk-862` contains five users, five receipts, and one `2026-07-22` report snapshot with `cashRevenue: 190`.
+2026-07-22T15:27:00+05:00 - Investigated login failure. Hosted Convex CLI lookups found the seeded users. Frontend login treated Convex `useQuery` loading (`undefined`) as missing account and did not normalize email input.
+2026-07-22T15:29:00+05:00 - Patched login wiring to wait for Convex query loading and normalize email before lookup. Verified the hosted public query returns Arsalan's user for uppercase email with trailing whitespace.
+2026-07-22T15:31:00+05:00 - Codex review flagged lookup-only normalization. Updated `createUser` to store normalized emails so future created accounts match indexed login lookup.
+2026-07-22T15:33:00+05:00 - Second review flagged existing mixed-case emails. Updated login lookup to try normalized, trimmed, and exact email candidates while future writes stay normalized.
+2026-07-22T15:35:00+05:00 - Final review flagged loading requiring a second tap. Updated the login button to disable during Convex account lookup and show `Checking...`.
+2026-07-22T15:38:00+05:00 - Review flagged lower-case login for existing mixed-case stored emails. Added a bounded legacy fallback over the first 100 users after indexed lookup misses.
+2026-07-22T15:41:00+05:00 - Review flagged the 100-user fallback limit. Replaced it with async iteration that returns on the first normalized legacy email match after indexed probes miss.
+2026-07-22T15:44:00+05:00 - Review flagged unbounded login fallback. Replaced it with indexed optional `emailNormalized`, normalized future `createUser` writes, and seed-time backfill for demo users.
+2026-07-22T15:45:00+05:00 - Updated `src/data/convexSchema.ts` mirror with `emailNormalized`, `receipts`, and `reportSnapshots`.
+2026-07-22T15:39:03+05:00 - Pushed hosted Convex schema/functions and reran `seedDemoData`. Added `users.by_email_normalized` and verified Arsalan through both the normalized index and generated frontend API query.
+2026-07-22T15:48:00+05:00 - Review flagged seed backfill exact-email lookup. Updated seed lookup to check normalized index, exact candidates, and legacy normalized matches before inserting demo users.
+2026-07-22T15:41:40+05:00 - Pushed the fixed seed to hosted Convex and reran it. Verified all five hosted users now include `emailNormalized` and the generated frontend API query resolves uppercase/trailing-space login input.
+2026-07-22T15:51:00+05:00 - Review flagged non-demo legacy users. Added idempotent `users:backfillEmailNormalized` mutation to patch `emailNormalized` across existing users while keeping login lookup indexed.
+2026-07-22T15:45:19+05:00 - Pushed and ran `users:backfillEmailNormalized` on hosted Convex; it returned `updated: 0`. Verified generated frontend API lookup still resolves uppercase/trailing-space login input.
+2026-07-22T15:54:00+05:00 - Review flagged public backfill exposure. Removed `users:backfillEmailNormalized` from shipped code after hosted backfill completed.
+2026-07-22T15:48:07+05:00 - Pushed final Convex code to hosted deployment after removing public backfill mutation. Verified generated frontend API login lookup still returns Arsalan for uppercase/trailing-space input.
+2026-07-22T15:57:00+05:00 - Review flagged missing shipped migration path for non-demo legacy users. Reintroduced `backfillEmailNormalized` as an internal mutation, not public API.
+2026-07-22T15:51:04+05:00 - Pushed internal-migration version to hosted Convex. Verified generated frontend API lookup still returns Arsalan for uppercase/trailing-space input.
+2026-07-22T15:57:06+05:00 - Removed the unbounded internal backfill from shipped code and restored the legacy normalized login fallback. Re-ran `npm run verify`, Convex TypeScript, and a hosted generated API lookup against `https://fastidious-chipmunk-862.convex.cloud`; all passed.
+2026-07-22T16:01:05+05:00 - Fixed seed reuse of legacy demo users so missing `locationId` is patched with the seeded location. Pushed and reran `seedDemoData` on `fastidious-chipmunk-862`; hosted Convex returned five users, five tickets, five receipts, and one report. Verified all five hosted users have `emailNormalized`, `locationId`, and expected demo passwords.

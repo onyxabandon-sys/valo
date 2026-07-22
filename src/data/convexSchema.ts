@@ -1,6 +1,7 @@
 export const convexSchema = {
   users: {
     email: 'string',
+    emailNormalized: 'string?',
     passwordHash: 'string',
     locationId: 'id(locations)',
     createdAt: 'number',
@@ -24,5 +25,25 @@ export const convexSchema = {
     paymentMethod: 'cash',
     createdAt: 'number',
     createdByUserId: 'id(users)',
+  },
+  receipts: {
+    ticketId: 'id(tickets)',
+    locationId: 'id(locations)',
+    receiptNumber: 'string',
+    customerName: 'string?',
+    vehicleNumber: 'string',
+    amount: 'number',
+    paymentMethod: 'cash',
+    issuedAt: 'number',
+    issuedByUserId: 'id(users)',
+  },
+  reportSnapshots: {
+    locationId: 'id(locations)',
+    reportDate: 'string',
+    ticketCount: 'number',
+    receiptCount: 'number',
+    cashRevenue: 'number',
+    generatedAt: 'number',
+    generatedByUserId: 'id(users)',
   },
 };

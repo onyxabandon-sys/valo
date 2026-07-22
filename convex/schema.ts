@@ -4,12 +4,16 @@ import { v } from 'convex/values';
 export default defineSchema({
   users: defineTable({
     email: v.string(),
+    emailNormalized: v.optional(v.string()),
     passwordHash: v.string(),
     name: v.string(),
     role: v.union(v.literal('admin'), v.literal('attendant')),
     locationId: v.optional(v.id('locations')),
     createdAt: v.number(),
-  }).index('by_email', ['email']).index('by_location', ['locationId']),
+  })
+    .index('by_email', ['email'])
+    .index('by_email_normalized', ['emailNormalized'])
+    .index('by_location', ['locationId']),
 
   locations: defineTable({
     name: v.string(),
