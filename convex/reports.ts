@@ -21,3 +21,14 @@ export const getDailyReport = query({
     };
   },
 });
+
+export const listReportSnapshots = query({
+  args: { locationId: v.id('locations') },
+  handler: async (ctx, args) => {
+    return await ctx.db
+      .query('reportSnapshots')
+      .withIndex('by_location_and_generated_at', q => q.eq('locationId', args.locationId))
+      .order('desc')
+      .take(30);
+  },
+});

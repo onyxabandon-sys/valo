@@ -54,3 +54,14 @@ export const listTodayTickets = query({
       .collect();
   },
 });
+
+export const listReceipts = query({
+  args: { locationId: v.id('locations') },
+  handler: async (ctx, args) => {
+    return await ctx.db
+      .query('receipts')
+      .withIndex('by_location_and_issued_at', q => q.eq('locationId', args.locationId))
+      .order('desc')
+      .take(50);
+  },
+});

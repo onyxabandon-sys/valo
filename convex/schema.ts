@@ -41,4 +41,31 @@ export default defineSchema({
     .index('by_location_and_date', ['locationId', 'createdAt'])
     .index('by_client_id', ['clientId'])
     .index('by_ticket_number', ['locationId', 'ticketNumber']),
+
+  receipts: defineTable({
+    ticketId: v.id('tickets'),
+    locationId: v.id('locations'),
+    receiptNumber: v.string(),
+    customerName: v.optional(v.string()),
+    vehicleNumber: v.string(),
+    amount: v.number(),
+    paymentMethod: v.literal('cash'),
+    issuedAt: v.number(),
+    issuedByUserId: v.id('users'),
+  })
+    .index('by_ticket', ['ticketId'])
+    .index('by_location_and_issued_at', ['locationId', 'issuedAt'])
+    .index('by_receipt_number', ['receiptNumber']),
+
+  reportSnapshots: defineTable({
+    locationId: v.id('locations'),
+    reportDate: v.string(),
+    ticketCount: v.number(),
+    receiptCount: v.number(),
+    cashRevenue: v.number(),
+    generatedAt: v.number(),
+    generatedByUserId: v.id('users'),
+  })
+    .index('by_location_and_report_date', ['locationId', 'reportDate'])
+    .index('by_location_and_generated_at', ['locationId', 'generatedAt']),
 });
