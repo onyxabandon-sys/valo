@@ -291,7 +291,7 @@ export const bootstrapFirstAdmin = action({
     try {
       const account = await createCredentialAccount(ctx, { email, name, password });
       authUserId = account.id;
-      await ctx.runMutation(internal.admin.finishFirstAdminBootstrap, { authUserId, email, name });
+      await ctx.runMutation(internal.admin.finishFirstAdminBootstrap, { authUserId: account.id, email, name });
       return { created: true as const };
     } catch (error) {
       if (authUserId) {
@@ -633,7 +633,7 @@ export const createAttendant = action({
       authUserId = authUser.id;
       return await ctx.runMutation(internal.admin.persistProvisionedAttendant, {
         actorUserId,
-        authUserId,
+        authUserId: authUser.id,
         name,
         email,
         phoneNumber,
