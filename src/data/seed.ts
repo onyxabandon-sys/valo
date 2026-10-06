@@ -1,12 +1,8 @@
-import { Ticket, User, VehicleType } from '../types';
+import { Ticket, User, PricedVehicleType } from '../types';
 
-export const VEHICLE_RATES: Record<VehicleType, number> = {
-  Bike: 20,
-  Car: 50,
-  'Commercial Vehicle': 100,
-  Bus: 200,
-  'Heavy Vehicle': 150,
-  Tractor: 30,
+export const VEHICLE_RATES: Record<PricedVehicleType, number> = {
+  Bike: 50,
+  Car: 100,
 };
 
 export const userSeed: User = {
@@ -14,6 +10,8 @@ export const userSeed: User = {
   email: 'rohit.sharma@company.com',
   role: 'Attendant',
   locationId: 'demo-location',
+  organizationCode: 'ORG-001',
+  organizationName: 'Arsalan Valet parking',
   locationName: 'Main Gate, Building A',
   locationAddress: 'Mumbai, Maharashtra',
   employeeId: 'ATT1007',
@@ -28,6 +26,8 @@ export const adminSeed: User = {
   email: 'arsalan.valet@demo.local',
   role: 'Admin',
   locationId: 'demo-location',
+  organizationCode: 'ORG-001',
+  organizationName: 'Arsalan Valet parking',
   locationName: 'Main Gate, Building A',
   locationAddress: 'Mumbai, Maharashtra',
   employeeId: 'ADM1001',
@@ -43,7 +43,7 @@ export const initialTickets: Ticket[] = [
     ticketNumber: '1-0005',
     vehicleType: 'Car',
     vehicleNumber: 'MH12AB1234',
-    amount: 50,
+    amount: 100,
     createdAt: '2025-05-16T08:30:00.000Z',
     locationName: userSeed.locationName,
     paymentStatus: 'paid',
@@ -54,7 +54,7 @@ export const initialTickets: Ticket[] = [
     ticketNumber: '1-0006',
     vehicleType: 'Bike',
     vehicleNumber: 'MH01XY2026',
-    amount: 20,
+    amount: 50,
     createdAt: '2025-05-16T10:15:00.000Z',
     locationName: userSeed.locationName,
     paymentStatus: 'paid',

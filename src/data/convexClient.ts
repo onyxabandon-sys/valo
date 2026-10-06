@@ -1,5 +1,4 @@
 import { ConvexReactClient } from 'convex/react';
+import { CONVEX_URL } from '@env';
 
-const url = process.env.EXPO_PUBLIC_CONVEX_URL || process.env.CONVEX_URL || '';
-
-export const convexClient = url ? new ConvexReactClient(url) : null;
+export const convexClient = CONVEX_URL ? new ConvexReactClient(CONVEX_URL, { expectAuth: true }) : null;

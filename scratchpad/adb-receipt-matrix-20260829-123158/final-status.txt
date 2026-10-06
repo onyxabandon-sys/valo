@@ -1,0 +1,6 @@
+﻿final_capture_timestamp=2026-08-29T12:39:45.7410735+05:00
+airplane_mode=0
+metro_listener_8081=False
+app_focus=  mCurrentFocus=Window{d6b2fbc u0 com.valetpos/com.valetpos.MainActivity}
+repo_source_changes_made_by_agent=none
+scope_blocker=dedicated_test_account_credentials_not_available

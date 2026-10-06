@@ -1,0 +1,11 @@
+﻿
+08-29 12:57:42.253  9116  9116 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+08-29 12:57:42.261  9116  9116 I AndroidRuntime: Using default boot image
+08-29 12:57:42.261  9116  9116 I AndroidRuntime: Leaving lock profiling enabled
+08-29 12:57:42.453  9116  9116 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+08-29 12:57:42.553  9072  9111 I ReactNativeJS: Running "main"
+08-29 12:57:42.642  9072  9111 W ReactNativeJS: The app is running using the Legacy Architecture. The Legacy Architecture is deprecated and will be removed in a future version of React Native. Please 
+consider migrating to the New Architecture. For more information, please see https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+08-29 12:57:46.198  9116  9116 D AndroidRuntime: Shutting down VM
+
+

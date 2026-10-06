@@ -1,0 +1,13 @@
+﻿
+08-29 13:06:57.075 10158 10206 I ReactNativeJS: WebSocket closed with code 1006: Unable to resolve host "energetic-robin-176.convex.cloud": No address associated with hostname
+08-29 13:06:57.075 10158 10206 I ReactNativeJS: Attempting reconnect in 12519ms
+08-29 13:07:04.294 10158 10207 W ValetSunmiBridge: SUNMI print rejected: SUNMI_BIND_FAILED The SUNMI printer service could not be bound.
+08-29 13:07:07.466 10630 10630 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+08-29 13:07:07.473 10630 10630 I AndroidRuntime: Using default boot image
+08-29 13:07:07.474 10630 10630 I AndroidRuntime: Leaving lock profiling enabled
+08-29 13:07:07.635 10630 10630 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+08-29 13:07:08.765 10630 10630 D AndroidRuntime: Shutting down VM
+08-29 13:07:09.635 10158 10206 I ReactNativeJS: WebSocket closed with code 1006: Unable to resolve host "energetic-robin-176.convex.cloud": No address associated with hostname
+08-29 13:07:09.635 10158 10206 I ReactNativeJS: Attempting reconnect in 8983ms
+
+

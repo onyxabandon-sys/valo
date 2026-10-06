@@ -1,5 +1,6 @@
-import { mutation, type MutationCtx } from './_generated/server';
+import { internalMutation, type MutationCtx } from './_generated/server';
 import { Id } from './_generated/dataModel';
+import { v } from 'convex/values';
 
 function normalizeEmail(email: string) {
   return email.trim().toLowerCase();
@@ -36,8 +37,15 @@ async function findUserByEmail(ctx: MutationCtx, email: string) {
   return null;
 }
 
-export const seedDemoData = mutation({
+export const seedDemoData = internalMutation({
   args: {},
+  returns: v.object({
+    locationId: v.id('locations'),
+    userCount: v.number(),
+    ticketCount: v.number(),
+    receiptCount: v.number(),
+    reportCount: v.number(),
+  }),
   handler: async ctx => {
     const now = Date.now();
     const reportDate = new Date(now).toISOString().slice(0, 10);
@@ -48,7 +56,9 @@ export const seedDemoData = mutation({
     if (!locationId) {
       locationId = await ctx.db.insert('locations', {
         name: 'Valet Parking - Main Gate',
+        organizationName: 'Arsalan Valet parking',
         address: 'Mumbai, Maharashtra',
+        organizationCode: 'demo-org',
         createdAt: now,
       });
     }
@@ -56,31 +66,26 @@ export const seedDemoData = mutation({
     const users = [
       {
         email: 'arsalan.valet@demo.local',
-        passwordHash: 'demo-arsalan-123',
         name: 'Arsalan Valet',
         role: 'admin' as const,
       },
       {
         email: 'ibrahim.valetparking@demo.local',
-        passwordHash: 'demo-ibrahim-123',
         name: 'Ibrahim Valet Parking',
         role: 'admin' as const,
       },
       {
         email: 'rohit.attendant@demo.local',
-        passwordHash: 'demo-rohit-123',
         name: 'Rohit Sharma',
         role: 'attendant' as const,
       },
       {
         email: 'sameer.attendant@demo.local',
-        passwordHash: 'demo-sameer-123',
         name: 'Sameer Khan',
         role: 'attendant' as const,
       },
       {
         email: 'faizan.attendant@demo.local',
-        passwordHash: 'demo-faizan-123',
         name: 'Faizan Ali',
         role: 'attendant' as const,
       },
@@ -112,17 +117,20 @@ export const seedDemoData = mutation({
 
     await ctx.db.patch(locationId, {
       ownerUserId: userIds[0],
+      organizationCode: 'demo-org',
+      organizationName: 'Arsalan Valet parking',
     });
 
     const checkIns = [
-      ['demo-ticket-001', '1-0001', 'Car', 'MH12AB1234', 50, userIds[2], 'Ali Merchant'],
-      ['demo-ticket-002', '1-0002', 'Bike', 'MH01XY2026', 20, userIds[3], 'Priya Nair'],
-      ['demo-ticket-003', '1-0003', 'Car', 'MH14CD7777', 50, userIds[4], 'Kabir Shaikh'],
-      ['demo-ticket-004', '1-0004', 'Bike', 'MH02EF1111', 20, userIds[2], 'Neha Kapoor'],
-      ['demo-ticket-005', '1-0005', 'Car', 'MH09GH9090', 50, userIds[3], 'Vikram Rao'],
+      ['demo-ticket-001', '1-0001', 'Car', 'MH12AB1234', 100, userIds[2], 'Ali Merchant'],
+      ['demo-ticket-002', '1-0002', 'Bike', 'MH01XY2026', 50, userIds[3], 'Priya Nair'],
+      ['demo-ticket-003', '1-0003', 'Car', 'MH14CD7777', 100, userIds[4], 'Kabir Shaikh'],
+      ['demo-ticket-004', '1-0004', 'Bike', 'MH02EF1111', 50, userIds[2], 'Neha Kapoor'],
+      ['demo-ticket-005', '1-0005', 'Car', 'MH09GH9090', 100, userIds[3], 'Vikram Rao'],
     ] as const;
 
     const ticketIds: Array<Id<'tickets'>> = [];
+    const operatorNames = new Map(userIds.map((userId, index) => [userId, users[index].name]));
     for (const [clientId, ticketNumber, vehicleType, vehicleNumber, amount, createdByUserId, customerName] of checkIns) {
       const existingTicket = await ctx.db
         .query('tickets')
@@ -154,6 +162,15 @@ export const seedDemoData = mutation({
           ticketId,
           locationId,
           receiptNumber: `RCPT-${ticketNumber}`,
+          organizationCode: 'DEMO-ORG',
+          organizationName: 'Arsalan Valet parking',
+          locationName: 'Valet Parking - Main Gate',
+          barcodeValue: `RCPT-${ticketNumber}`,
+          vehicleType,
+          printStatus: 'pending',
+          reprintCount: 0,
+          operatorName: operatorNames.get(createdByUserId) ?? 'Unknown operator',
+          paymentStatus: 'paid',
           customerName,
           vehicleNumber,
           amount,

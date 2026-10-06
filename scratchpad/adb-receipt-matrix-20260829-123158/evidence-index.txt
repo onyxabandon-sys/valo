@@ -1,0 +1,2 @@
+﻿tracked_status_lines=9824
+evidence_dir=C:\Users\Dev\Downloads\valo\scratchpad\adb-receipt-matrix-20260829-123158

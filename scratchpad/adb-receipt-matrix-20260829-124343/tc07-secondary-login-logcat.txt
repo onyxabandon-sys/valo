@@ -1,0 +1,82 @@
+﻿
+08-29 13:18:52.480   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+08-29 13:18:52.480   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+08-29 13:18:52.480   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+08-29 13:18:52.480   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+08-29 13:18:52.480   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+08-29 13:18:52.480   725  3078 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+08-29 13:18:52.485 11921 11921 D AndroidRuntime: Shutting down VM
+08-29 13:19:04.942 10940 10940 W HidDeviceService: unregisterAppUid(): caller UID doesn't match user UID
+08-29 13:19:06.307 11949 11949 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+08-29 13:19:06.314 11949 11949 I AndroidRuntime: Using default boot image
+08-29 13:19:06.315 11949 11949 I AndroidRuntime: Leaving lock profiling enabled
+08-29 13:19:06.474 11949 11949 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+08-29 13:19:06.511 11949 11949 D UiAutomationConnection: Created on user UserHandle{0}
+08-29 13:19:06.511 11949 11949 I UiAutomation: Initialized for user 0 on display 0
+08-29 13:19:06.513   725  1654 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+08-29 13:19:06.513   725  1654 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation, flags=0x0) when called by user 0
+08-29 13:19:06.514   725  1654 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+08-29 13:19:06.515   725  1654 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+08-29 13:19:06.515   725  1654 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+08-29 13:19:06.515   725  1654 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+08-29 13:19:06.515   725  1654 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+08-29 13:19:06.515   725  1654 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+08-29 13:19:06.515   725  1654 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+08-29 13:19:06.516   725  1654 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+08-29 13:19:06.532   725  1679 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+08-29 13:19:06.547   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+08-29 13:19:06.549   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+08-29 13:19:06.552   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+08-29 13:19:06.554   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+08-29 13:19:06.558   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+08-29 13:19:06.558   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+08-29 13:19:06.558   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+08-29 13:19:06.591   725  2000 D AccessibilityManagerService: .getAccessibilityShortcutTargets {shortcutType=32, userId=0}
+08-29 13:19:07.273 11962 11962 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+08-29 13:19:07.282 11962 11962 I AndroidRuntime: Using default boot image
+08-29 13:19:07.282 11962 11962 I AndroidRuntime: Leaving lock profiling enabled
+08-29 13:19:07.597  2224  2413 W MediaProvider: isAppCloneUserPair for user 0: false
+08-29 13:19:07.637 11962 11962 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+08-29 13:19:07.656   725  2000 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+08-29 13:19:07.662   725  2000 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+08-29 13:19:07.662   725  2000 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+08-29 13:19:07.662   725  2000 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+08-29 13:19:07.662   725  2000 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+08-29 13:19:07.662   725  2000 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+08-29 13:19:07.662   725  2000 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+08-29 13:19:07.662   725  2000 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+08-29 13:19:07.662   725  2000 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+08-29 13:19:07.682 11949 11949 D AndroidRuntime: Shutting down VM
+08-29 13:19:07.718 11962 11962 D UiAutomationConnection: Created on user UserHandle{0}
+08-29 13:19:07.728 11962 11962 I UiAutomation: Initialized for user 0 on display 0
+08-29 13:19:07.796   725  1679 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+08-29 13:19:07.798   725  1679 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation, flags=0x0) when called by user 0
+08-29 13:19:07.799   725  1679 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+08-29 13:19:07.803   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+08-29 13:19:07.803   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+08-29 13:19:07.803   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+08-29 13:19:07.803   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+08-29 13:19:07.803   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+08-29 13:19:07.809   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+08-29 13:19:07.815   725  1679 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+08-29 13:19:07.877   725  2825 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+08-29 13:19:07.878   725  2825 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+08-29 13:19:07.879   725  2825 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+08-29 13:19:07.879   725  2825 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+08-29 13:19:07.879   725  2825 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+08-29 13:19:07.879   725  2825 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+08-29 13:19:07.879   725  2825 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+08-29 13:19:07.879   725  2825 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+08-29 13:19:07.981   725  1654 D AccessibilityManagerService: .getAccessibilityShortcutTargets {shortcutType=32, userId=0}
+08-29 13:19:08.937   725  3078 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+08-29 13:19:08.940   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+08-29 13:19:08.940   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+08-29 13:19:08.940   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+08-29 13:19:08.941   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+08-29 13:19:08.941   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+08-29 13:19:08.941   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+08-29 13:19:08.941   725  3078 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+08-29 13:19:08.941   725  3078 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+08-29 13:19:08.979 11962 11962 D AndroidRuntime: Shutting down VM
+
+

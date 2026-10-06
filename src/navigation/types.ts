@@ -1,11 +1,10 @@
 export type RootStackParamList = {
   MainTabs: undefined;
   Login: undefined;
-  Signup: undefined;
+  DeviceAccess: undefined;
   VehicleTypes: undefined;
   VehicleForm: undefined;
   Slip: undefined;
   Lookup: undefined;
   Report: undefined;
-  Profile: undefined;
 };

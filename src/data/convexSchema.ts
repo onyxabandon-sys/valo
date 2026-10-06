@@ -2,7 +2,6 @@ export const convexSchema = {
   users: {
     email: 'string',
     emailNormalized: 'string?',
-    passwordHash: 'string',
     locationId: 'id(locations)',
     createdAt: 'number',
   },
@@ -19,7 +18,7 @@ export const convexSchema = {
     clientId: 'string',
     locationId: 'id(locations)',
     ticketNumber: 'string',
-    vehicleType: 'Car|Bike|Commercial Vehicle|Bus|Heavy Vehicle|Tractor',
+    vehicleType: 'Bike|Car|Commercial Vehicle|Bus|Heavy Vehicle|Tractor',
     vehicleNumber: 'string',
     amount: 'number',
     paymentStatus: 'paid|void',

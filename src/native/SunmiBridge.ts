@@ -1,30 +1,44 @@
 import { NativeModules } from 'react-native';
 
-export type PrinterStatus = 'ready' | 'no_paper' | 'error';
+export type PrinterStatus =
+  | 'ready'
+  | 'initializing'
+  | 'hardware_error'
+  | 'out_of_paper'
+  | 'overheated'
+  | 'cover_open'
+  | 'cutter_error'
+  | 'cutter_recovered'
+  | 'black_mark_missing'
+  | 'not_found'
+  | 'unknown_error'
+  | 'disconnected';
+
+export type PrinterStatusResult = { status: PrinterStatus; code?: number };
 
 export type SlipPrintPayload = {
-  ticketId: string;
-  ticketNumber: string;
+  receiptId: string;
+  receiptNumber: string;
+  organizationCode: string;
+  organizationName?: string;
   vehicleNumber: string;
   vehicleType: string;
-  locationName: string;
-  amount: number;
-  paymentStatus: string;
-  createdAt: string;
+  vehicleRate: number;
+  issuedAt: string;
   barcodeValue: string;
 };
 
 export interface SunmiBridge {
-  printSlip(payload: SlipPrintPayload): Promise<{ success: boolean }>;
+  printSlip(payload: SlipPrintPayload): Promise<{ success: boolean; receiptId?: string; durationMs?: number }>;
   scanBarcode(): Promise<{ code: string }>;
-  getPrinterStatus(): Promise<PrinterStatus>;
+  getPrinterStatus(): Promise<PrinterStatusResult>;
 }
 
 const nativeModule = NativeModules.SunmiBridge as
   | {
-      printSlip?: (payload: SlipPrintPayload) => Promise<{ success: boolean }>;
+      printSlip?: (payload: SlipPrintPayload) => Promise<{ success: boolean; receiptId?: string; durationMs?: number }>;
       scanBarcode?: () => Promise<{ code: string }>;
-      getPrinterStatus?: () => Promise<PrinterStatus>;
+      getPrinterStatus?: () => Promise<PrinterStatusResult>;
     }
   | undefined;
 
@@ -33,17 +47,17 @@ const fallbackBridge: SunmiBridge = {
     return { success: false };
   },
   async scanBarcode() {
-    return { code: '' };
+    throw new Error('BARCODE_SCANNER_UNAVAILABLE');
   },
   async getPrinterStatus() {
-    return 'error';
+    return { status: 'disconnected' };
   },
 };
 
 export const SunmiNative: SunmiBridge = nativeModule
   ? {
       printSlip: payload => nativeModule.printSlip?.(payload) ?? Promise.resolve({ success: false }),
-      scanBarcode: () => nativeModule.scanBarcode?.() ?? Promise.resolve({ code: '' }),
-      getPrinterStatus: () => nativeModule.getPrinterStatus?.() ?? Promise.resolve('error'),
+      scanBarcode: () => nativeModule.scanBarcode?.() ?? Promise.reject(new Error('BARCODE_SCANNER_UNAVAILABLE')),
+      getPrinterStatus: () => nativeModule.getPrinterStatus?.() ?? Promise.resolve({ status: 'disconnected' }),
     }
   : fallbackBridge;

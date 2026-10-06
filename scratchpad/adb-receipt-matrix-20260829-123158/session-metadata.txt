@@ -1,0 +1,6 @@
+﻿local_timestamp=2026-08-29T12:32:48.6707511+05:00
+local_date=2026-08-29
+calendar_month=2026-08
+timezone=Pakistan Standard Time
+metro_pid=33756
+capture_timestamp=2026-08-29T12:38:12.0661513+05:00

@@ -1,2 +1,29 @@
 
+.env
 .env.local
+.env.production
+.env.sunmi-device
+.expo/
+.convex/local/
+node_modules/
+android/.gradle/8.14.3/checksums/checksums.lock
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Android build artifacts
+**/build/
+**/.gradle/
+*.apk
+*.aab
+
+# Gradle / Android generated files
+**/.gradle/
+**/build/
+*.apk
+*.aab
+node_modules/
+
+**/.kotlin/

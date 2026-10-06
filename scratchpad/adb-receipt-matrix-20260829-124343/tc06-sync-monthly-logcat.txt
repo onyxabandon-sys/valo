@@ -1,0 +1,23 @@
+﻿
+08-29 13:16:29.376 11666 11666 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@32e8f; boundsInParent: Rect(0, 0 - 1188, 60); boundsInScreen: 
+Rect(126, 3326 - 1314, 2796); boundsInWindow: Rect(126, 3326 - 1314, 2796); packageName: com.valetpos; className: android.widget.TextView; text: Print: failed · Sync: synced · Reprints: 0; error: null; 
+maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: 
+false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: true; 
+visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: 
+ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - 
+null]; isTextSelectable: false
+08-29 13:16:29.417 11666 11666 D AndroidRuntime: Shutting down VM
+08-29 13:17:01.180 11707 11707 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+08-29 13:17:01.186 11707 11707 I AndroidRuntime: Using default boot image
+08-29 13:17:01.186 11707 11707 I AndroidRuntime: Leaving lock profiling enabled
+08-29 13:17:01.323 11707 11707 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+08-29 13:17:02.445 11707 11707 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@32e93; boundsInParent: Rect(0, 0 - 1188, 60); boundsInScreen: 
+Rect(126, 3326 - 1314, 2796); boundsInWindow: Rect(126, 3326 - 1314, 2796); packageName: com.valetpos; className: android.widget.TextView; text: Print: failed · Sync: synced · Reprints: 0; error: null; 
+maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: 
+false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: true; 
+visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: 
+ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - 
+null]; isTextSelectable: false
+08-29 13:17:02.499 11707 11707 D AndroidRuntime: Shutting down VM
+
+

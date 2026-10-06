@@ -1,0 +1,10 @@
+﻿
+08-29 12:56:36.423  8964  8964 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+08-29 12:56:36.442  8964  8964 I AndroidRuntime: Using default boot image
+08-29 12:56:36.442  8964  8964 I AndroidRuntime: Leaving lock profiling enabled
+08-29 12:56:37.053  8964  8964 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+08-29 12:56:38.137  7568  7644 I ReactNativeJS: WebSocket closed with code 1006: Unable to resolve host "energetic-robin-176.convex.cloud": No address associated with hostname
+08-29 12:56:38.137  7568  7644 I ReactNativeJS: Attempting reconnect in 5545ms
+08-29 12:56:38.510  8964  8964 D AndroidRuntime: Shutting down VM
+
+

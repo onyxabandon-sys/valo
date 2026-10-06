@@ -1,6 +1,6 @@
-import 'dotenv/config';
+import './loadEnv';
 import assert from 'node:assert/strict';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
 const requiredEnv = [
@@ -20,7 +20,10 @@ function main() {
 
   const keystoreExample = path.join(process.cwd(), 'android', 'keystore.properties.example');
   const androidGradle = path.join(process.cwd(), 'android', 'app', 'build.gradle');
-  const sunmiModule = path.join(process.cwd(), 'android', 'app', 'src', 'main', 'java', 'com', 'valetpos', 'sunmi', 'SunmiBridgeModule.kt');
+  const appConfig = JSON.parse(readFileSync(path.join(process.cwd(), 'app.json'), 'utf8')) as { expo?: { android?: { package?: string } } };
+  const androidPackage = appConfig.expo?.android?.package;
+  assert.ok(androidPackage, 'app.json must define the Android package used by native sources');
+  const sunmiModule = path.join(process.cwd(), 'android', 'app', 'src', 'main', 'java', ...androidPackage.split('.'), 'sunmi', 'SunmiBridgeModule.kt');
   const convexSchema = path.join(process.cwd(), 'convex', 'schema.ts');
 
   assert.equal(existsSync(keystoreExample), true, 'Missing android/keystore.properties.example');

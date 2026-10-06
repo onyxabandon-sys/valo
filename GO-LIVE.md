@@ -2,13 +2,16 @@
 
 Use this in order.
 
-## 1. Create `.env`
+## 1. Create the production environment
 
-Copy [`.env.example`](./.env.example) to `.env` and fill the values.
+Copy [`.env.example`](./.env.example) to the ignored `.env.production` file,
+fill the values, and set `$env:APP_ENV_FILE='.env.production'` in the same
+PowerShell session used to verify and build the APK.
 
 Required values:
 - `APP_NAME`
 - `CONVEX_URL`
+- `CONVEX_SITE_URL`
 - `BETTER_AUTH_SECRET`
 - `BETTER_AUTH_URL`
 - `SUNMI_PRINT_ENABLED`
@@ -21,8 +24,7 @@ Required values:
 1. Create or open your Convex deployment.
 2. Copy the deployment URL into `CONVEX_URL`.
 3. Run the Convex codegen/deploy pipeline used by your environment.
-4. Replace the generated API scaffold once bindings are produced.
-5. Verify ticket create, lookup, and daily report queries against the live deployment.
+4. Verify ticket create, lookup, and daily report queries against the live deployment.
 
 ## 3. Configure Android signing
 
@@ -38,7 +40,7 @@ Required values:
 ## 4. Build the release APK
 
 1. Make sure Android SDK, Java 17, and Gradle are installed.
-2. Run the React Native Android release build command for your environment.
+2. From `android`, run `.\gradlew.bat :app:assembleRelease --no-daemon --console=plain`.
 3. Confirm the APK is generated successfully.
 4. Verify the release bundle has ProGuard/R8 enabled.
 
@@ -59,4 +61,4 @@ Run these before release:
 - `npm run test:features`
 - `npm run test:release`
 - `npm run verify`
-
+- `npm audit --omit=dev`

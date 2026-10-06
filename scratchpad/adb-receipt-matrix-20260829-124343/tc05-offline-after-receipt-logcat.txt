@@ -1,0 +1,11 @@
+﻿
+08-29 13:09:40.759 10840 10882 I ReactNativeJS: Running "main"
+08-29 13:09:40.857 10840 10882 W ReactNativeJS: The app is running using the Legacy Architecture. The Legacy Architecture is deprecated and will be removed in a future version of React Native. Please 
+consider migrating to the New Architecture. For more information, please see https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+08-29 13:09:41.380 10889 10889 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+08-29 13:09:41.386 10889 10889 I AndroidRuntime: Using default boot image
+08-29 13:09:41.387 10889 10889 I AndroidRuntime: Leaving lock profiling enabled
+08-29 13:09:41.547 10889 10889 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+08-29 13:09:44.658 10889 10889 D AndroidRuntime: Shutting down VM
+
+

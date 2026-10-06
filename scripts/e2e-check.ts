@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { strFromU8, unzipSync } from 'fflate';
 import { adminSeed, initialTickets, userSeed } from '../src/data/seed';
 import { localDatabase } from '../src/data/localDatabase';
 import { buildReportExport } from '../src/lib/reportExport';
@@ -30,9 +31,14 @@ function main() {
     generatedAt: '2026-07-17T00:00:00.000Z',
   });
 
-  assert.ok(exportPayload.fileName.endsWith('.csv'));
-  assert.ok(exportPayload.csv.includes('Ticket Number'));
-  assert.ok(exportPayload.csv.includes(attendantTicket.ticketNumber));
+  assert.ok(exportPayload.fileName.endsWith('.xlsx'));
+  const workbookFiles = unzipSync(exportPayload.bytes);
+  const receiptsSheet = strFromU8(workbookFiles['xl/worksheets/sheet2.xml']);
+  const summarySheet = strFromU8(workbookFiles['xl/worksheets/sheet1.xml']);
+  assert.ok(receiptsSheet.includes('Receipt Number'));
+  assert.ok(receiptsSheet.includes(attendantTicket.ticketNumber));
+  assert.doesNotMatch(receiptsSheet, /Latitude|Longitude|GPS/);
+  assert.ok(summarySheet.includes(`<c r="B4"><v>${after.count}</v></c>`));
 
   console.log('E2E flow check passed');
 }

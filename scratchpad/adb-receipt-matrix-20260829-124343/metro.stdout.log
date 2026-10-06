@@ -1,0 +1,76 @@
+
+Welcome to React Native v0.81
+Starting dev server on http://localhost:8081
+
+[34m
+                        ▒▒▓▓▓▓▒▒
+                     ▒▓▓▓▒▒░░▒▒▓▓▓▒
+                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒
+                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓
+                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓
+                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓
+                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓
+                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒
+                     ▒▓▓▓▒░░░░▒▓▓▓▒
+                        ▒▒▓▓▓▓▒▒
+
+[39m
+[33m[7m[1m WARN [22m[27m[39m the transform cache was reset.
+[34m[1m                Welcome to Metro [37mv0.83.7[39m
+[22m[39m[2m              Fast - Scalable - Integrated
+
+[22m
+[36m[7m[1m INFO [22m[27m[39m Connection established to app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37'.
+[36m[7m[1m INFO [22m[27m[39m [1m[7m💡 JavaScript logs have moved![22m They can now be viewed in React Native DevTools. Tip: Type [1mj[22m in the terminal to open (requires Google Chrome or Microsoft Edge).[27m
+[36m[7m[1m INFO [22m[27m[39m Connection closed to device='sdk_gphone16k_x86_64 - 17 - API 37' for app='com.valetpos' with code='1006' and reason=''.
+[36m[7m[1m INFO [22m[27m[39m Connection established to app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37'.
+[36m[7m[1m INFO [22m[27m[39m Dev server ready. Press Ctrl+C to exit.
+[36m[7m[1m INFO [22m[27m[39m Interactive mode is not supported in this environment
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m[49m[39m[47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0% [22m[2m(0/1)[22m
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓[49m[39m[47m[37m░░░░░░░░░░░░░░░[39m[49m[1m 11% [22m[2m(8/24)[22m
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓[49m[39m[47m[37m░░░░░░░░░░░░░░[39m[49m[1m 14% [22m[2m(42/194)[22m
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓[49m[39m[47m[37m░░░░░░░░░░░[39m[49m[1m 33% [22m[2m(207/371)[22m
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░░░░[39m[49m[1m 46% [22m[2m(413/603)[22m
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░[39m[49m[1m 63% [22m[2m(626/784)[22m
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░[39m[49m[1m 67% [22m[2m(742/904)[22m
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░[39m[49m[1m 76% [22m[2m(1012/1156)[22m
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░[39m[49m[1m 90% [22m[2m(1297/1393)[22m
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 99% [22m[2m(1421/1421)[22m
+[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m 
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m node_modules\expo-network\build/[22m[0m[1mNetwork.js[22m [32m[42m[49m[39m[47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0% [22m[2m(0/1)[22m
+[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m node_modules\expo-network\build/[22m[0m[1mNetwork.js[22m 
+[31m[7m[1m ERROR [22m[27m[39m [timeout] connection terminated with Device for app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37' after not responding for 60 seconds.
+[36m[7m[1m INFO [22m[27m[39m Connection closed to device='sdk_gphone16k_x86_64 - 17 - API 37' for app='com.valetpos' with code='1006' and reason=''.
+[36m[7m[1m INFO [22m[27m[39m Connection established to app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37'.
+[36m[7m[1m INFO [22m[27m[39m Connection closed to device='sdk_gphone16k_x86_64 - 17 - API 37' for app='com.valetpos' with code='1006' and reason=''.
+[36m[7m[1m INFO [22m[27m[39m Connection established to app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37'.
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m[49m[39m[47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0% [22m[2m(0/1)[22m
+[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m 
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m node_modules\expo-network\build/[22m[0m[1mNetwork.js[22m [32m[42m[49m[39m[47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0% [22m[2m(0/1)[22m
+[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m node_modules\expo-network\build/[22m[0m[1mNetwork.js[22m 
+[31m[7m[1m ERROR [22m[27m[39m [timeout] connection terminated with Device for app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37' after not responding for 60 seconds.
+[36m[7m[1m INFO [22m[27m[39m Connection closed to device='sdk_gphone16k_x86_64 - 17 - API 37' for app='com.valetpos' with code='1006' and reason=''.
+[36m[7m[1m INFO [22m[27m[39m Connection established to app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37'.
+[36m[7m[1m INFO [22m[27m[39m Connection closed to device='sdk_gphone16k_x86_64 - 17 - API 37' for app='com.valetpos' with code='1006' and reason=''.
+[36m[7m[1m INFO [22m[27m[39m Connection established to app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37'.
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m[49m[39m[47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0% [22m[2m(0/1)[22m
+[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m 
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m node_modules\expo-network\build/[22m[0m[1mNetwork.js[22m [32m[42m[49m[39m[47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0% [22m[2m(0/1)[22m
+[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m node_modules\expo-network\build/[22m[0m[1mNetwork.js[22m 
+[31m[7m[1m ERROR [22m[27m[39m [timeout] connection terminated with Device for app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37' after not responding for 60 seconds.
+[36m[7m[1m INFO [22m[27m[39m Connection closed to device='sdk_gphone16k_x86_64 - 17 - API 37' for app='com.valetpos' with code='1006' and reason=''.
+[36m[7m[1m INFO [22m[27m[39m Connection established to app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37'.
+[36m[7m[1m INFO [22m[27m[39m Connection closed to device='sdk_gphone16k_x86_64 - 17 - API 37' for app='com.valetpos' with code='1006' and reason=''.
+[36m[7m[1m INFO [22m[27m[39m Connection established to app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37'.
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m[49m[39m[47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0% [22m[2m(0/1)[22m
+[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m 
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m node_modules\expo-network\build/[22m[0m[1mNetwork.js[22m [32m[42m[49m[39m[47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0% [22m[2m(0/1)[22m
+[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m node_modules\expo-network\build/[22m[0m[1mNetwork.js[22m 
+[36m[7m[1m INFO [22m[27m[39m Connection closed to device='sdk_gphone16k_x86_64 - 17 - API 37' for app='com.valetpos' with code='1006' and reason=''.
+[36m[7m[1m INFO [22m[27m[39m Connection established to app='com.valetpos' on device='sdk_gphone16k_x86_64 - 17 - API 37'.
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m[49m[39m[47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0% [22m[2m(0/1)[22m
+[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m 
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m node_modules\expo-network\build/[22m[0m[1mNetwork.js[22m [32m[42m[49m[39m[47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0% [22m[2m(0/1)[22m
+[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m node_modules\expo-network\build/[22m[0m[1mNetwork.js[22m 

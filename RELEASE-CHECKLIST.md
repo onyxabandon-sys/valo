@@ -5,12 +5,19 @@
 Set these values before release:
 - `APP_NAME`
 - `CONVEX_URL`
+- `CONVEX_SITE_URL`
 - `BETTER_AUTH_SECRET`
 - `BETTER_AUTH_URL`
 - `SUNMI_PRINT_ENABLED`
 - `OFFLINE_QUEUE_RETENTION_DAYS`
 - `DEFAULT_LOCATION_NAME`
 - `DEFAULT_LOCATION_ADDRESS`
+
+Select the production file in the release PowerShell session:
+
+```powershell
+$env:APP_ENV_FILE='.env.production'
+```
 
 ## Android signing
 
@@ -20,15 +27,15 @@ Set these values before release:
 
 ## Convex
 
-1. Run `convex dev` or your deployment pipeline.
+1. Deploy the reviewed backend to the explicitly approved production deployment.
 2. Generate the client bindings.
-3. Replace the scaffolded `convex/_generated/api.ts` file with generated output.
+3. Verify the production identity, tenant, ticket, receipt, and report paths.
 
 ## Sunmi hardware
 
-1. Add the vendor SDK dependency to `android/app/build.gradle`.
-2. Replace the stub logic in `SunmiBridgeModule.kt` with the vendor printer/scanner calls.
-3. Validate on a physical Sunmi terminal with paper loaded and scanner enabled.
+1. Confirm the official SUNMI printer dependency is resolved.
+2. Validate on a physical Sunmi V2 Pro with paper loaded.
+3. Confirm the successful print result is stored and visible in the report.
 
 ## Verification
 
@@ -36,6 +43,17 @@ Run:
 - `npm run typecheck`
 - `npm run test:features`
 - `npm run test:release`
+- `npm run test:e2e`
+- `npm run test:golive`
+- `npx expo-doctor`
+- `npm audit --omit=dev`
+
+Build from the repository root only after all blocking checks pass:
+
+```powershell
+Set-Location android
+.\gradlew.bat :app:assembleRelease --no-daemon --console=plain
+```
 
 ## Manual QA
 

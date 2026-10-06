@@ -1,0 +1,22 @@
+﻿
+08-29 13:08:36.699 10770 10770 D AndroidRuntime: Shutting down VM
+08-29 13:08:37.333 10158 10206 I ReactNativeJS: WebSocket closed with code 1006: Unable to resolve host "energetic-robin-176.convex.cloud": No address associated with hostname
+08-29 13:08:37.333 10158 10206 I ReactNativeJS: Attempting reconnect in 10177ms
+08-29 13:08:47.550 10158 10206 I ReactNativeJS: WebSocket closed with code 1006: Unable to resolve host "energetic-robin-176.convex.cloud": No address associated with hostname
+08-29 13:08:47.550 10158 10206 I ReactNativeJS: Attempting reconnect in 8298ms
+08-29 13:08:55.883 10158 10206 I ReactNativeJS: WebSocket closed with code 1006: Unable to resolve host "energetic-robin-176.convex.cloud": No address associated with hostname
+08-29 13:08:55.883 10158 10206 I ReactNativeJS: Attempting reconnect in 21671ms
+08-29 13:09:01.108 10800 10800 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+08-29 13:09:01.113 10800 10800 I AndroidRuntime: Using default boot image
+08-29 13:09:01.113 10800 10800 I AndroidRuntime: Leaving lock profiling enabled
+08-29 13:09:01.236 10800 10800 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+08-29 13:09:02.354 10800 10800 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@51241; boundsInParent: Rect(0, 0 - 1188, 60); boundsInScreen: 
+Rect(126, 3326 - 1314, 2796); boundsInWindow: Rect(126, 3326 - 1314, 2796); packageName: com.valetpos; className: android.widget.TextView; text: Print: failed · Sync: synced · Reprints: 0; error: null; 
+maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: 
+false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: true; 
+visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: 
+ACTION_NEXT_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY - null, AccessibilityAction: ACTION_SET_SELECTION - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - 
+null]; isTextSelectable: false
+08-29 13:09:02.389 10800 10800 D AndroidRuntime: Shutting down VM
+
+

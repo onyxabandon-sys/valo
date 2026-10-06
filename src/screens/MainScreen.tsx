@@ -1,100 +1,75 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { MaterialDesignIconsIconName } from '@react-native-vector-icons/material-design-icons/static';
+import { AppIcon } from '../ui/AppIcon';
+import { colors, radius, surfaceShadow } from '../ui/tokens';
 import { User } from '../types';
 
 type Props = {
   user: User;
   onCheckIn: () => void;
-  onProfile: () => void;
   onHistory: () => void;
   onLookup: () => void;
 };
 
-function MenuCard({
-  title,
-  subtitle,
-  accent,
-  onPress,
-}: {
-  title: string;
-  subtitle: string;
-  accent: 'blue' | 'slate' | 'emerald' | 'amber';
-  onPress: () => void;
-}) {
-  const accents = {
-    blue: { card: styles.cardBlue, icon: styles.iconBlue, title: styles.titleBlue },
-    slate: { card: styles.cardSlate, icon: styles.iconSlate, title: styles.titleSlate },
-    emerald: { card: styles.cardEmerald, icon: styles.iconEmerald, title: styles.titleEmerald },
-    amber: { card: styles.cardAmber, icon: styles.iconAmber, title: styles.titleAmber },
-  }[accent];
-
-  const glyph = {
-    blue: '▣',
-    slate: '◫',
-    emerald: '↺',
-    amber: '⌁',
-  }[accent];
-
+function ToolCard({ label, detail, icon, onPress }: { label: string; detail: string; icon: MaterialDesignIconsIconName; onPress: () => void }) {
   return (
-    <TouchableOpacity style={[styles.menuCard, accents.card]} onPress={onPress} activeOpacity={0.9}>
-      <View style={[styles.menuIcon, accents.icon]}>
-        <Text style={[styles.menuIconText]}>{glyph}</Text>
+    <TouchableOpacity style={styles.toolCard} onPress={onPress} activeOpacity={0.84} accessibilityRole="button">
+      <View style={styles.toolMarker}>
+        <AppIcon name={icon} color={colors.cobalt} size={22} />
       </View>
-      <Text style={[styles.menuTitle, accents.title]}>{title}</Text>
-      <Text style={styles.menuSubtitle}>{subtitle}</Text>
+      <View style={styles.toolCopy}>
+        <Text style={styles.toolLabel}>{label}</Text>
+        <Text style={styles.toolDetail}>{detail}</Text>
+      </View>
+      <AppIcon name="chevron-right" color={colors.muted} size={22} />
     </TouchableOpacity>
   );
 }
 
-export function MainScreen({ user, onCheckIn, onProfile, onHistory, onLookup }: Props) {
+export function MainScreen({ user, onCheckIn, onHistory, onLookup }: Props) {
   return (
     <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
-      <View style={styles.backdropTop} />
-      <View style={styles.backdropBottom} />
+      <StatusBar barStyle="dark-content" backgroundColor={colors.surface} />
       <ScrollView contentContainerStyle={styles.container} showsVerticalScrollIndicator={false}>
-        <View style={styles.hero}>
-          <View style={styles.avatarWrap}>
-            <View style={styles.avatar} />
-            <View style={styles.onlineDot} />
+        <View style={styles.blueOrbTop} />
+        <View style={styles.blueOrbBottom} />
+        <View style={styles.header}>
+          <View>
+            <Text style={styles.brand}>VALET / POS</Text>
+            <Text style={styles.location}>{user.locationName}</Text>
           </View>
-          <View style={styles.heroText}>
-            <Text style={styles.kicker}>Welcome back</Text>
-            <Text style={styles.name}>{user.name}</Text>
-            <View style={styles.locationRow}>
-              <Text style={styles.locationPin}>⌖</Text>
-              <Text style={styles.location}>{user.locationAddress}</Text>
+        </View>
+
+        <View style={styles.welcomeRow}>
+          <View style={styles.welcomeCopy}>
+            <Text style={styles.eyebrow}>OPERATOR READY</Text>
+            <Text style={styles.title}>Good to see you,{`\n`}{user.name.split(' ')[0]}.</Text>
+          </View>
+        </View>
+
+        <TouchableOpacity style={styles.primaryAction} onPress={onCheckIn} activeOpacity={0.9} accessibilityRole="button">
+          <View style={styles.primaryTopRow}>
+            <Text style={styles.primaryKicker}>FAST CHECK-IN</Text>
+            <View style={styles.primaryArrowWrap}>
+              <AppIcon name="arrow-right" color={colors.cobalt} size={23} />
             </View>
           </View>
-          <View style={styles.bellWrap}>
-            <Text style={styles.bell}>🔔</Text>
-            <View style={styles.bellBadge} />
-          </View>
+          <Text style={styles.primaryTitle}>Create a receipt</Text>
+          <Text style={styles.primaryDetail}>Bike Rs. 50  |  Car Rs. 100</Text>
+          <View style={styles.primaryRule} />
+          <Text style={styles.primaryFoot}>Select vehicle, enter plate, print.</Text>
+        </TouchableOpacity>
+
+        <View style={styles.sectionHeader}>
+          <Text style={styles.sectionTitle}>Tools</Text>
+          <Text style={styles.sectionHint}>Everything else</Text>
         </View>
 
-        <View style={styles.panel}>
-          <View style={styles.panelHeader}>
-            <Text style={styles.panelTitle}>Main Menu</Text>
-            <Text style={styles.panelSubtitle}>Choose an action to continue</Text>
-          </View>
-
-          <View style={styles.grid}>
-            <MenuCard title="Check-in" subtitle="Scan QR and issue a ticket" accent="blue" onPress={onCheckIn} />
-            <MenuCard title="My Assets" subtitle="Review assigned details" accent="slate" onPress={onProfile} />
-            <MenuCard title="History" subtitle="Open recent activity" accent="emerald" onPress={onHistory} />
-            <MenuCard title="Lookup" subtitle="Search by ticket ID" accent="amber" onPress={onLookup} />
-          </View>
-        </View>
-
-        <View style={styles.notice}>
-          <View style={styles.noticeBadge}>
-            <Text style={styles.noticeBadgeText}>✓</Text>
-          </View>
-          <View style={{ flex: 1 }}>
-            <Text style={styles.noticeTitle}>Secure and Reliable</Text>
-            <Text style={styles.noticeBody}>All check-ins are recorded locally and synced when connectivity returns.</Text>
-          </View>
-          <Text style={styles.chevron}>{'>'}</Text>
+        <View style={styles.tools}>
+          <ToolCard label="Daily report" detail="Receipts, totals and export" icon="chart-box-outline" onPress={onHistory} />
+          <ToolCard label="Receipt lookup" detail="Find by barcode or receipt ID" icon="barcode-scan" onPress={onLookup} />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -102,116 +77,32 @@ export function MainScreen({ user, onCheckIn, onProfile, onHistory, onLookup }: 
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#EEF2FF' },
-  backdropTop: {
-    position: 'absolute',
-    top: -80,
-    left: -60,
-    width: 260,
-    height: 260,
-    borderRadius: 130,
-    backgroundColor: 'rgba(37, 99, 235, 0.14)',
-  },
-  backdropBottom: {
-    position: 'absolute',
-    right: -90,
-    bottom: 120,
-    width: 220,
-    height: 220,
-    borderRadius: 110,
-    backgroundColor: 'rgba(16, 185, 129, 0.10)',
-  },
-  container: { paddingHorizontal: 20, paddingTop: 18, paddingBottom: 28, gap: 18 },
-  hero: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 14,
-    padding: 16,
-    borderRadius: 28,
-    backgroundColor: '#0F172A',
-  },
-  avatarWrap: { width: 68, height: 68, position: 'relative' },
-  avatar: { width: 68, height: 68, borderRadius: 34, backgroundColor: '#CBD5E1' },
-  onlineDot: {
-    width: 16,
-    height: 16,
-    borderRadius: 8,
-    backgroundColor: '#22C55E',
-    position: 'absolute',
-    right: 1,
-    bottom: 2,
-    borderWidth: 3,
-    borderColor: '#0F172A',
-  },
-  heroText: { flex: 1 },
-  kicker: { fontSize: 13, letterSpacing: 0.7, color: '#94A3B8', textTransform: 'uppercase' },
-  name: { fontSize: 28, fontWeight: '800', color: '#FFFFFF', lineHeight: 32, marginTop: 2 },
-  locationRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: 6 },
-  locationPin: { fontSize: 17, color: '#93C5FD' },
-  location: { fontSize: 15, color: '#CBD5E1', flexShrink: 1 },
-  bellWrap: { width: 42, height: 42, alignItems: 'center', justifyContent: 'center', position: 'relative' },
-  bell: { fontSize: 28 },
-  bellBadge: { width: 10, height: 10, borderRadius: 5, backgroundColor: '#FB7185', position: 'absolute', top: 5, right: 5 },
-  panel: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 30,
-    padding: 18,
-    shadowColor: '#0F172A',
-    shadowOpacity: 0.08,
-    shadowRadius: 24,
-    shadowOffset: { width: 0, height: 14 },
-    elevation: 5,
-  },
-  panelHeader: { marginBottom: 16 },
-  panelTitle: { fontSize: 30, fontWeight: '800', color: '#111827' },
-  panelSubtitle: { fontSize: 15, color: '#64748B', marginTop: 6 },
-  grid: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', rowGap: 14 },
-  menuCard: {
-    width: '48%',
-    minHeight: 212,
-    borderRadius: 24,
-    paddingVertical: 20,
-    paddingHorizontal: 14,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: '#E5E7EB',
-  },
-  cardBlue: { backgroundColor: '#F8FBFF', borderColor: '#C7DBFF' },
-  cardSlate: { backgroundColor: '#F8FAFC', borderColor: '#E2E8F0' },
-  cardEmerald: { backgroundColor: '#F0FDF4', borderColor: '#BBF7D0' },
-  cardAmber: { backgroundColor: '#FFF9ED', borderColor: '#FDE68A' },
-  menuIcon: {
-    width: 92,
-    height: 92,
-    borderRadius: 46,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 16,
-  },
-  iconBlue: { backgroundColor: '#2563EB' },
-  iconSlate: { backgroundColor: '#334155' },
-  iconEmerald: { backgroundColor: '#16A34A' },
-  iconAmber: { backgroundColor: '#D97706' },
-  menuIconText: { fontSize: 32, fontWeight: '800', color: '#FFFFFF' },
-  menuTitle: { fontSize: 20, fontWeight: '800', textAlign: 'center' },
-  titleBlue: { color: '#2563EB' },
-  titleSlate: { color: '#0F172A' },
-  titleEmerald: { color: '#15803D' },
-  titleAmber: { color: '#B45309' },
-  menuSubtitle: { fontSize: 13, color: '#64748B', textAlign: 'center', marginTop: 8, lineHeight: 18 },
-  notice: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#0F172A',
-    borderRadius: 24,
-    paddingHorizontal: 18,
-    paddingVertical: 16,
-    gap: 12,
-  },
-  noticeBadge: { width: 48, height: 48, borderRadius: 24, backgroundColor: '#DCFCE7', alignItems: 'center', justifyContent: 'center' },
-  noticeBadgeText: { color: '#16A34A', fontWeight: '800', fontSize: 20 },
-  noticeTitle: { fontSize: 17, fontWeight: '800', color: '#FFFFFF' },
-  noticeBody: { fontSize: 13, color: '#CBD5E1', marginTop: 4, lineHeight: 18 },
-  chevron: { fontSize: 28, color: '#94A3B8' },
+  safe: { flex: 1, backgroundColor: colors.surface },
+  container: { paddingHorizontal: 20, paddingTop: 16, paddingBottom: 112 },
+  blueOrbTop: { position: 'absolute', top: -80, right: -60, width: 190, height: 190, borderRadius: 95, backgroundColor: colors.blueCanvasDeep, opacity: 0.9 },
+  blueOrbBottom: { position: 'absolute', bottom: 170, left: -90, width: 210, height: 210, borderRadius: 105, backgroundColor: '#DCEBFF', opacity: 0.7 },
+  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 28 },
+  brand: { color: colors.cobalt, fontSize: 12, fontWeight: '900', letterSpacing: 1.8 },
+  location: { color: colors.muted, fontSize: 13, fontWeight: '600', marginTop: 4 },
+  welcomeRow: { gap: 14, marginBottom: 22 },
+  welcomeCopy: { flex: 1 },
+  eyebrow: { color: colors.mintText, fontSize: 11, fontWeight: '900', letterSpacing: 1.4, marginBottom: 7 },
+  title: { color: colors.ink, fontSize: 34, lineHeight: 39, fontWeight: '900', letterSpacing: -0.8 },
+  primaryAction: { backgroundColor: colors.cobaltDeep, borderRadius: radius.large, padding: 22, minHeight: 238, ...surfaceShadow },
+  primaryTopRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  primaryKicker: { color: '#DCE7FF', fontSize: 11, fontWeight: '900', letterSpacing: 1.4 },
+  primaryArrowWrap: { width: 42, height: 42, borderRadius: 21, backgroundColor: colors.surface, alignItems: 'center', justifyContent: 'center' },
+  primaryTitle: { color: colors.surface, fontSize: 31, fontWeight: '900', letterSpacing: -0.6, marginTop: 24 },
+  primaryDetail: { color: '#DCE7FF', fontSize: 16, fontWeight: '700', marginTop: 9 },
+  primaryRule: { height: 1, backgroundColor: 'rgba(255,255,255,0.26)', marginTop: 28, marginBottom: 14 },
+  primaryFoot: { color: colors.surface, fontSize: 13, fontWeight: '700' },
+  sectionHeader: { flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between', marginTop: 28, marginBottom: 12 },
+  sectionTitle: { color: colors.ink, fontSize: 22, fontWeight: '900' },
+  sectionHint: { color: colors.muted, fontSize: 12, fontWeight: '700' },
+  tools: { gap: 10 },
+  toolCard: { flexDirection: 'row', alignItems: 'center', backgroundColor: colors.surface, borderRadius: radius.medium, padding: 14, borderWidth: 1, borderColor: colors.line },
+  toolMarker: { width: 44, height: 44, borderRadius: 14, backgroundColor: colors.cobaltSoft, alignItems: 'center', justifyContent: 'center' },
+  toolCopy: { flex: 1, marginLeft: 13 },
+  toolLabel: { color: colors.ink, fontSize: 16, fontWeight: '900' },
+  toolDetail: { color: colors.muted, fontSize: 12, lineHeight: 17, marginTop: 3 },
 });

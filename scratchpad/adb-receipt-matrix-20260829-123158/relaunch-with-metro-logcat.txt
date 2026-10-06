@@ -1,0 +1,822 @@
+﻿--------- beginning of main
+08-29 12:33:53.924   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:53.938   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:53.941   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:53.958   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:53.991   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:53.993  7207  7275 I com.valetpos: IncrementDisableThreadFlip blocked for 16.349ms
+08-29 12:33:53.998  7207  7212 I com.valetpos: Background concurrent mark compact GC freed 4400KB AllocSpace bytes, 135(4240KB) LOS objects, 49% free, 12MB/24MB, paused 2.699ms,16.076ms total 218.584ms
+08-29 12:33:54.007   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.025   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.042   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.047   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.058   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.074   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.090   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.108   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.124   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.124   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.149   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.158   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.175   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.190   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.207   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.224   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.241   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.251   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.259   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.274   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.291   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.296  7207  7212 I com.valetpos: Background young concurrent mark compact GC freed 6496KB AllocSpace bytes, 200(6336KB) LOS objects, 63% free, 9061KB/24MB, paused 1.726ms,11.261ms total 133.525ms
+08-29 12:33:54.308   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.326   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.341   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.352   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.358   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.375   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.391   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.407   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.425   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.441   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.458   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.462   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.475   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.491   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.496  7207  7257 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderConfigShadowNode
+08-29 12:33:54.508   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.518  7207  7257 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreensShadowNode
+08-29 12:33:54.525   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.541   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.557   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.563   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.592   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.607   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.624   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.640   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.657   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.664  7207  7257 W unknown:ReactNative: Attempt to set local data for view with unknown tag: -1
+08-29 12:33:54.666   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.674   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.677  7207  7257 W unknown:ReactNative: Attempt to set local data for view with unknown tag: -1
+08-29 12:33:54.678  7207  7257 W unknown:ReactNative: Attempt to set local data for view with unknown tag: -1
+08-29 12:33:54.684  7207  7257 W unknown:ReactNative: Attempt to set local data for view with unknown tag: -1
+08-29 12:33:54.686  7207  7257 W unknown:ReactNative: Attempt to set local data for view with unknown tag: -1
+08-29 12:33:54.688  7207  7257 W unknown:ReactNative: Attempt to set local data for view with unknown tag: -1
+08-29 12:33:54.690   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.707   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.721  7207  7207 I com.valetpos: hiddenapi: Accessing hidden field Landroid/widget/ScrollView;->mScroller:Landroid/widget/OverScroller; (runtime_flags=0, domain=platform, api=unsupported) from Lcom/facebook/react/views/scroll/ReactScrollView; (domain=app, TargetSdkVersion=36) using reflection: allowed
+08-29 12:33:54.724   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.741   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.758   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.767   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.774   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.792   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.808   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.824   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.841   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.858   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.869   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.874   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.891   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.908   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.925   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.941   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.958   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.971   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.974   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:54.990   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.008   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.022   725  1456 D WifiClientModeImpl[129527:wlan0]: updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=2 freq=2447 RxLinkSpeed=2
+08-29 12:33:55.022   725  1456 D WifiClientModeImpl[129527:wlan0]: reported txKbps 12000 rxKbps 30000
+08-29 12:33:55.022   725  1456 D WifiDataStall: tx tput in kbps: -1
+08-29 12:33:55.022   725  1456 D WifiDataStall: rx tput in kbps: -1
+08-29 12:33:55.023   725  1456 V WifiConfigManager: Updating scan detail cache freq=2447 BSSID=00:13:10:85:fe:01 RSSI=-50 for "AndroidWifi"NONE
+08-29 12:33:55.023   725  1456 E WifiDataStall: Ignore this poll. newStats: null txLinkSpeedMbps: 2 rxLinkSpeedMbps: 2 rssi: -50 connectionCapabilities: com.android.server.wifi.WifiNative$ConnectionCapabilities@91d28fe
+08-29 12:33:55.023   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:33:55.023   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:33:55.023   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:33:55.023   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+--------- beginning of system
+08-29 12:33:55.024   725  1492 I AdbWifiNetworkMonitor: Wi-Fi network available
+08-29 12:33:55.025   725  1492 I AdbWifiNetworkMonitor: Received the same Wi-Fi SSID. Ignoring.
+08-29 12:33:55.025   725  1456 D WifiScoreCard: BSSID update SIGNAL_POLL ID: 545624613 SSID: "AndroidWifi", BSSID: 00:13:10:85:fe:01, MAC: 02:15:b2:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 2Mbps, Tx Link speed: 2Mbps, Max Supported Tx Link speed: 11Mbps, Calculated Tx : 0Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Calculated Rx : 0Mbps, Frequency: 2447MHz, Net ID: 0, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"AndroidWifi"openMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+08-29 12:33:55.025   725  1456 D WifiScoreCard: txRate: 63 txSpeed: 2
+08-29 12:33:55.025   725  1456 D WifiScoreCard: network update SIGNAL_POLL "AndroidWifi" ID: 1582503498 RSSI -50 txSpeed 2
+08-29 12:33:55.025   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.025   725  1456 D WifiClientModeImpl[129527:wlan0]:  ClientModeImpl$L2ConnectedState screen=on 3 0 "AndroidWifi" 00:13:10:85:fe:01 rssi=-50 f=2447 sc=100 link=2 tx=62.2, 0.0, 0.0 rx=249.9 bcn=0 [on:0 tx:0 rx:0 period:3008] from screen [on:0 period:1282439889] score=100
+08-29 12:33:55.027   479   517 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.07ms>
+08-29 12:33:55.028   725  2338 I WifiService: getWifiEnabledState uid=10196 state=3
+08-29 12:33:55.031   479   517 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 5) <0.07ms>
+08-29 12:33:55.036   479   517 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.11ms>
+08-29 12:33:55.038   479   517 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 5) <0.05ms>
+08-29 12:33:55.041   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.042  1926  3034 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+08-29 12:33:55.042  1926  3034 W libbinder.Binder: Large reply transaction of 1056768 bytes, interface descriptor , function: UNKNOWN_FUNCTION_NAME, code: 1, flags: 17
+08-29 12:33:55.045   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:33:55.045   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:33:55.052  1698  1924 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+08-29 12:33:55.052   725   964 I WifiService: getConnectionInfo uid=10228
+08-29 12:33:55.053   725   964 V WifiService: Clearing REDACT_FOR_LOCAL_MAC_ADDRESS for com.google.android.gms(uid=10228)
+08-29 12:33:55.053   479   517 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.09ms>
+08-29 12:33:55.055   725   964 V WifiPermissionsUtil: checkCallersLocationPermission(com.google.android.gms): ok because uid 10228 has app-op android:fine_location
+08-29 12:33:55.055   725   964 V WifiService: Clearing REDACT_FOR_ACCESS_FINE_LOCATION for com.google.android.gms(uid=10228)
+08-29 12:33:55.055   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:33:55.055   479   517 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.05ms>
+08-29 12:33:55.057   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:33:55.057   479   517 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.07ms>
+08-29 12:33:55.057   479   517 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.05ms>
+08-29 12:33:55.059   479   517 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.02ms>
+08-29 12:33:55.059   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.064   479   521 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.05ms>
+08-29 12:33:55.066   479   521 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.11ms>
+08-29 12:33:55.067   479   517 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.07ms>
+08-29 12:33:55.069  1698  1924 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+08-29 12:33:55.069  1698  1924 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+08-29 12:33:55.074   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.079   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.090   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.107   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.125   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.141   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.157   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.174   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.180   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.191   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.209   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.225   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.241   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.259   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.274   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.283   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.291   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.309   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.324   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.341   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.359   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.374   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.384   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.390   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.408   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.424   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.441   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.444  7207  7207 W SafeAreaView: Timed out waiting for layout.
+08-29 12:33:55.458   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.474   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.482  7207  7257 W com.valetpos: Long monitor contention with owner main (7207) at void com.facebook.react.uimanager.NativeViewHierarchyManager.manageChildren(int, int[], com.facebook.react.uimanager.ViewAtIndex[], int[])(NativeViewHierarchyManager.java:555) waiters=0 in int com.facebook.react.uimanager.NativeViewHierarchyManager.getRootViewNum() for 596ms
+08-29 12:33:55.485   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.491   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.508   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.519  7207  7207 I Choreographer: Skipped 41 frames!  The application may be doing too much work on its main thread.
+08-29 12:33:55.578  1866  1866 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+08-29 12:33:55.578  1866  1866 D wpa_supplicant: nl80211: Beacon loss event
+08-29 12:33:55.578  1866  1866 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+08-29 12:33:55.579  1866  1866 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+08-29 12:33:55.591   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.692   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.700   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.700  7207  7217 I HWUI    : Davey! duration=1103ms; Flags=0, FrameTimelineVsyncId=239722, IntendedVsync=1436948996884, Vsync=1436948996884, InputEventId=0, HandleInputStart=1436956789400, AnimationStart=1436956820600, PerformTraversalsStart=1437865933500, DrawStart=1437867050000, FrameDeadline=1437898996846, FrameStartTime=1436956770100, FrameInterval=16666666, WorkloadTarget=16666666, AnimationTime=1436948996884, AnimationCounter=-1, SyncQueued=1437875055400, SyncStart=1437875332700, IssueDrawCommandsStart=1437875735300, SwapBuffers=1438038886600, FrameCompleted=1438052588900, DequeueBufferDuration=42000, QueueBufferDuration=385900, GpuCompleted=1438052588900, SwapBuffersCompleted=1438040654800, DisplayPresentTime=0, CommandSubmissionCompleted=1438038886600, 
+08-29 12:33:55.725   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.758   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.775   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:55.802   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.074   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.079   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.092   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.108   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.124   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.142   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.158   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.174   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.183   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.191   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.208   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.224   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.241   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.258   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.274   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.284   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.291   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.308   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.325   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.342   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:57.385   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:33:58.030   725  1456 D WifiClientModeImpl[129527:wlan0]: updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=1 freq=2447 RxLinkSpeed=2
+08-29 12:33:58.031   725  1456 D WifiClientModeImpl[129527:wlan0]: reported txKbps 12000 rxKbps 30000
+08-29 12:33:58.031   725  1456 D WifiDataStall: tx tput in kbps: -1
+08-29 12:33:58.031   725  1456 D WifiDataStall: rx tput in kbps: -1
+08-29 12:33:58.031   725  1456 V WifiConfigManager: Updating scan detail cache freq=2447 BSSID=00:13:10:85:fe:01 RSSI=-50 for "AndroidWifi"NONE
+08-29 12:33:58.031   725  1456 E WifiDataStall: Ignore this poll. newStats: null txLinkSpeedMbps: 1 rxLinkSpeedMbps: 2 rssi: -50 connectionCapabilities: com.android.server.wifi.WifiNative$ConnectionCapabilities@91d28fe
+08-29 12:33:58.031   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:33:58.031   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:33:58.031   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:33:58.031   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:33:58.032   725  1456 D WifiScoreCard: BSSID update SIGNAL_POLL ID: 545624613 SSID: "AndroidWifi", BSSID: 00:13:10:85:fe:01, MAC: 02:15:b2:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Calculated Tx : 0Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Calculated Rx : 0Mbps, Frequency: 2447MHz, Net ID: 0, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"AndroidWifi"openMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+08-29 12:33:58.032   725  1456 D WifiScoreCard: txRate: 25 txSpeed: 1
+08-29 12:33:58.032   725  1456 D WifiScoreCard: network update SIGNAL_POLL "AndroidWifi" ID: 1582503498 RSSI -50 txSpeed 1
+08-29 12:33:58.032   725  1492 I AdbWifiNetworkMonitor: Wi-Fi network available
+08-29 12:33:58.032   725  1492 I AdbWifiNetworkMonitor: Received the same Wi-Fi SSID. Ignoring.
+08-29 12:33:58.032   725  1456 D WifiClientModeImpl[129527:wlan0]:  ClientModeImpl$L2ConnectedState screen=on 3 0 "AndroidWifi" 00:13:10:85:fe:01 rssi=-50 f=2447 sc=100 link=1 tx=24.1, 0.0, 0.0 rx=93.1 bcn=0 [on:0 tx:0 rx:0 period:3006] from screen [on:0 period:1282442896] score=100
+08-29 12:33:58.039   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:33:58.039   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:33:58.040   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:33:58.040   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:33:58.040   725  2338 I WifiService: getConnectionInfo uid=10228
+08-29 12:33:58.040   725  2338 V WifiService: Clearing REDACT_FOR_LOCAL_MAC_ADDRESS for com.google.android.gms(uid=10228)
+08-29 12:33:58.041   725  2338 V WifiPermissionsUtil: checkCallersLocationPermission(com.google.android.gms): ok because uid 10228 has app-op android:fine_location
+08-29 12:33:58.041   725  2338 V WifiService: Clearing REDACT_FOR_ACCESS_FINE_LOCATION for com.google.android.gms(uid=10228)
+08-29 12:33:58.042   725  2338 I WifiService: getWifiEnabledState uid=10196 state=3
+08-29 12:33:58.045  1926  3008 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+08-29 12:33:58.045  1926  3008 W libbinder.Binder: Large reply transaction of 1056768 bytes, interface descriptor , function: UNKNOWN_FUNCTION_NAME, code: 1, flags: 17
+08-29 12:34:00.041   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:00.045   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:00.565  1782  2046 E SatelliteController: isSatelliteEnabled: mIsSatelliteEnabled=null
+08-29 12:34:00.565  1782  2046 D SatelliteController: isInCarrierRoamingNbIotNtn: satellite is disabled
+08-29 12:34:00.565  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: Checking connect type from PLMN config for subId: 1
+08-29 12:34:00.565  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:00.565  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:00.565  1782  2046 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+08-29 12:34:00.566  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:00.566  1782  2046 D SatelliteController: isSatelliteSupportedViaCarrier: using CarrierConfig for subId=1, isAttachSupported=false
+08-29 12:34:00.566  1782  2046 D SatelliteController: getSatellitePerPlmnConfiguration: invalid subId or not supported via carrier.
+08-29 12:34:00.566  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: config: null
+08-29 12:34:00.566  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:00.566  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:00.566  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectTypeViaConfigUpdater: return null (satelliteConfig is null)
+08-29 12:34:00.566  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:00.566  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+08-29 12:34:00.566  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:00.566  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:00.566  1782  2046 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+08-29 12:34:00.566  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:00.566  1782  2046 D SatelliteController: isSatelliteSupportedViaCarrier: using CarrierConfig for subId=1, isAttachSupported=false
+08-29 12:34:00.566  1782  2046 D SatelliteController: isInSatelliteModeForCarrierRoaming: subId=1, connectType=0, result=false
+08-29 12:34:00.567  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: Checking connect type from PLMN config for subId: 1
+08-29 12:34:00.567  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:00.567  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:00.567  1782  2046 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+08-29 12:34:00.567  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:00.567  1782  2046 D SatelliteController: isSatelliteSupportedViaCarrier: using CarrierConfig for subId=1, isAttachSupported=false
+08-29 12:34:00.567  1782  2046 D SatelliteController: getSatellitePerPlmnConfiguration: invalid subId or not supported via carrier.
+08-29 12:34:00.567  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: config: null
+08-29 12:34:00.567  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:00.567  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:00.567  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectTypeViaConfigUpdater: return null (satelliteConfig is null)
+08-29 12:34:00.567  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:00.567  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+08-29 12:34:00.567  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:00.567  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:00.567  1782  2046 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+08-29 12:34:00.567  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:00.567  1782  2046 D SatelliteController: isSatelliteSupportedViaCarrier: using CarrierConfig for subId=1, isAttachSupported=false
+08-29 12:34:00.567  1782  2046 D SatelliteController: isInSatelliteModeForCarrierRoaming: subId=1, connectType=0, result=false
+08-29 12:34:00.592   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:00.596   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:01.038   725  1456 D WifiClientModeImpl[129527:wlan0]: updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=1 freq=2447 RxLinkSpeed=2
+08-29 12:34:01.038   725  1456 D WifiDataStall: tx tput in kbps: -1
+08-29 12:34:01.038   725  1456 D WifiDataStall: rx tput in kbps: -1
+08-29 12:34:01.039   725  1456 V WifiConfigManager: Updating scan detail cache freq=2447 BSSID=00:13:10:85:fe:01 RSSI=-50 for "AndroidWifi"NONE
+08-29 12:34:01.039   725  1456 E WifiDataStall: Ignore this poll. newStats: null txLinkSpeedMbps: 1 rxLinkSpeedMbps: 2 rssi: -50 connectionCapabilities: com.android.server.wifi.WifiNative$ConnectionCapabilities@91d28fe
+08-29 12:34:01.039   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:34:01.039   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:34:01.039   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:34:01.039   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:34:01.041   725  1456 D WifiScoreCard: BSSID update SIGNAL_POLL ID: 545624613 SSID: "AndroidWifi", BSSID: 00:13:10:85:fe:01, MAC: 02:15:b2:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Calculated Tx : 0Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Calculated Rx : 0Mbps, Frequency: 2447MHz, Net ID: 0, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"AndroidWifi"openMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+08-29 12:34:01.041   479   517 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.07ms>
+08-29 12:34:01.041   725  1456 D WifiScoreCard: txRate: 10 txSpeed: 1
+08-29 12:34:01.041   725  1456 D WifiScoreCard: network update SIGNAL_POLL "AndroidWifi" ID: 1582503498 RSSI -50 txSpeed 1
+08-29 12:34:01.042   725  1456 D WifiClientModeImpl[129527:wlan0]:  ClientModeImpl$L2ConnectedState screen=on 3 0 "AndroidWifi" 00:13:10:85:fe:01 rssi=-50 f=2447 sc=100 link=1 tx=9.6, 0.0, 0.0 rx=35.6 bcn=0 [on:0 tx:0 rx:0 period:3010] from screen [on:0 period:1282445906] score=100
+08-29 12:34:01.043   479   517 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 5) <0.04ms>
+08-29 12:34:01.043   479   517 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.04ms>
+08-29 12:34:01.044   479   517 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 5) <0.05ms>
+08-29 12:34:01.047  1698  1924 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+08-29 12:34:01.051   479   517 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.05ms>
+08-29 12:34:01.052   479   517 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.05ms>
+08-29 12:34:01.052   479   517 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.04ms>
+08-29 12:34:01.053   479   517 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.09ms>
+08-29 12:34:01.053  1698  1924 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+08-29 12:34:03.494  1866  1866 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+08-29 12:34:03.494  1866  1866 D wpa_supplicant: nl80211: Beacon loss event
+08-29 12:34:03.494  1866  1866 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+08-29 12:34:03.494  1866  1866 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+08-29 12:34:04.043   725  1456 D WifiClientModeImpl[129527:wlan0]: updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=1 freq=2447 RxLinkSpeed=2
+08-29 12:34:04.044   725  1456 D WifiDataStall: tx tput in kbps: -1
+08-29 12:34:04.044   725  1456 D WifiDataStall: rx tput in kbps: -1
+08-29 12:34:04.044   725  1456 V WifiConfigManager: Updating scan detail cache freq=2447 BSSID=00:13:10:85:fe:01 RSSI=-50 for "AndroidWifi"NONE
+08-29 12:34:04.044   725  1456 E WifiDataStall: Ignore this poll. newStats: null txLinkSpeedMbps: 1 rxLinkSpeedMbps: 2 rssi: -50 connectionCapabilities: com.android.server.wifi.WifiNative$ConnectionCapabilities@91d28fe
+08-29 12:34:04.044   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:34:04.044   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:34:04.044   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:34:04.044   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:34:04.045   725  1456 D WifiScoreCard: BSSID update SIGNAL_POLL ID: 545624613 SSID: "AndroidWifi", BSSID: 00:13:10:85:fe:01, MAC: 02:15:b2:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Calculated Tx : 0Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Calculated Rx : 0Mbps, Frequency: 2447MHz, Net ID: 0, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"AndroidWifi"openMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+08-29 12:34:04.045   725  1456 D WifiScoreCard: txRate: 5 txSpeed: 1
+08-29 12:34:04.045   725  1456 D WifiScoreCard: network update SIGNAL_POLL "AndroidWifi" ID: 1582503498 RSSI -50 txSpeed 1
+08-29 12:34:04.046   725  1456 D WifiClientModeImpl[129527:wlan0]:  ClientModeImpl$L2ConnectedState screen=on 3 0 "AndroidWifi" 00:13:10:85:fe:01 rssi=-50 f=2447 sc=100 link=1 tx=4.6, 0.0, 0.0 rx=14.7 bcn=0 [on:0 tx:0 rx:0 period:3004] from screen [on:0 period:1282448910] score=100
+08-29 12:34:04.730   342  7269 I keystore2: system/security/keystore2/watchdog/src/lib.rs:371 - Watchdog thread idle -> terminating. Have a great day.
+08-29 12:34:07.050   725  1456 D WifiClientModeImpl[129527:wlan0]: updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=1 freq=2447 RxLinkSpeed=2
+08-29 12:34:07.050   725  1456 D WifiDataStall: tx tput in kbps: -1
+08-29 12:34:07.050   725  1456 D WifiDataStall: rx tput in kbps: -1
+08-29 12:34:07.050   725  1456 V WifiConfigManager: Updating scan detail cache freq=2447 BSSID=00:13:10:85:fe:01 RSSI=-50 for "AndroidWifi"NONE
+08-29 12:34:07.050   725  1456 E WifiDataStall: Ignore this poll. newStats: null txLinkSpeedMbps: 1 rxLinkSpeedMbps: 2 rssi: -50 connectionCapabilities: com.android.server.wifi.WifiNative$ConnectionCapabilities@91d28fe
+08-29 12:34:07.050   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:34:07.050   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:34:07.050   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:34:07.050   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:34:07.051   725  1456 D WifiScoreCard: BSSID update SIGNAL_POLL ID: 545624613 SSID: "AndroidWifi", BSSID: 00:13:10:85:fe:01, MAC: 02:15:b2:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Calculated Tx : 0Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Calculated Rx : 0Mbps, Frequency: 2447MHz, Net ID: 0, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"AndroidWifi"openMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+08-29 12:34:07.051   725  1456 D WifiScoreCard: txRate: 3 txSpeed: 1
+08-29 12:34:07.051   725  1456 D WifiScoreCard: network update SIGNAL_POLL "AndroidWifi" ID: 1582503498 RSSI -50 txSpeed -1
+08-29 12:34:07.052   479   517 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.06ms>
+08-29 12:34:07.052   725  1456 D WifiClientModeImpl[129527:wlan0]:  ClientModeImpl$L2ConnectedState screen=on 3 0 "AndroidWifi" 00:13:10:85:fe:01 rssi=-50 f=2447 sc=100 link=1 tx=2.3, 0.0, 0.0 rx=6.6 bcn=0 [on:0 tx:0 rx:0 period:3006] from screen [on:0 period:1282451916] score=100
+08-29 12:34:07.052   479   517 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 5) <0.02ms>
+08-29 12:34:07.053   479   517 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.04ms>
+08-29 12:34:07.053   479   517 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 5) <0.04ms>
+08-29 12:34:07.056  1698  1924 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+08-29 12:34:07.062   479   517 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.05ms>
+08-29 12:34:07.062   479   517 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.03ms>
+08-29 12:34:07.063   479   517 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.04ms>
+08-29 12:34:07.064   479   517 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.04ms>
+08-29 12:34:07.064  1698  1924 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+08-29 12:34:10.055   725  1456 D WifiClientModeImpl[129527:wlan0]: updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=2 freq=2447 RxLinkSpeed=2
+08-29 12:34:10.055   725  1456 D WifiClientModeImpl[129527:wlan0]: reported txKbps 12000 rxKbps 30000
+08-29 12:34:10.055   725  1456 D WifiDataStall: tx tput in kbps: -1
+08-29 12:34:10.055   725  1456 D WifiDataStall: rx tput in kbps: -1
+08-29 12:34:10.055   725  1456 V WifiConfigManager: Updating scan detail cache freq=2447 BSSID=00:13:10:85:fe:01 RSSI=-50 for "AndroidWifi"NONE
+08-29 12:34:10.056   725  1456 E WifiDataStall: Ignore this poll. newStats: null txLinkSpeedMbps: 2 rxLinkSpeedMbps: 2 rssi: -50 connectionCapabilities: com.android.server.wifi.WifiNative$ConnectionCapabilities@91d28fe
+08-29 12:34:10.057   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:34:10.058   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:34:10.058   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:34:10.058   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:34:10.059   725  1456 D WifiScoreCard: BSSID update SIGNAL_POLL ID: 545624613 SSID: "AndroidWifi", BSSID: 00:13:10:85:fe:01, MAC: 02:15:b2:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 2Mbps, Tx Link speed: 2Mbps, Max Supported Tx Link speed: 11Mbps, Calculated Tx : 0Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Calculated Rx : 0Mbps, Frequency: 2447MHz, Net ID: 0, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"AndroidWifi"openMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+08-29 12:34:10.059   725  1456 D WifiScoreCard: txRate: 2 txSpeed: 2
+08-29 12:34:10.059   725  1456 D WifiScoreCard: network update SIGNAL_POLL "AndroidWifi" ID: 1582503498 RSSI -50 txSpeed -1
+08-29 12:34:10.059   725  1456 D WifiClientModeImpl[129527:wlan0]:  ClientModeImpl$L2ConnectedState screen=on 3 0 "AndroidWifi" 00:13:10:85:fe:01 rssi=-50 f=2447 sc=100 link=2 tx=1.9, 0.0, 0.0 rx=4.1 bcn=0 [on:0 tx:0 rx:0 period:3007] from screen [on:0 period:1282454923] score=100
+08-29 12:34:10.062   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:10.063   725  1492 I AdbWifiNetworkMonitor: Wi-Fi network available
+08-29 12:34:10.063   725  1492 I AdbWifiNetworkMonitor: Received the same Wi-Fi SSID. Ignoring.
+08-29 12:34:10.063   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:10.064   725   760 I WifiService: getWifiEnabledState uid=10196 state=3
+08-29 12:34:10.067   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:10.067   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:10.068   725   760 I WifiService: getConnectionInfo uid=10228
+08-29 12:34:10.068   725   760 V WifiService: Clearing REDACT_FOR_LOCAL_MAC_ADDRESS for com.google.android.gms(uid=10228)
+08-29 12:34:10.070   725   760 V WifiPermissionsUtil: checkCallersLocationPermission(com.google.android.gms): ok because uid 10228 has app-op android:fine_location
+08-29 12:34:10.071   725   760 V WifiService: Clearing REDACT_FOR_ACCESS_FINE_LOCATION for com.google.android.gms(uid=10228)
+08-29 12:34:10.073  1926  3024 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+08-29 12:34:10.074  1926  3024 W libbinder.Binder: Large reply transaction of 1056768 bytes, interface descriptor , function: UNKNOWN_FUNCTION_NAME, code: 1, flags: 17
+08-29 12:34:10.240   558   558 I adbd    : adbd service requested 'exec:screencap '-p''
+08-29 12:34:10.404   725   760 W InputChannel-JNI: Channel already disposed.
+08-29 12:34:10.408   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.408   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.408   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.410  7207  7207 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.widget.PopupWindow$PopupDecorView$$ExternalSyntheticLambda1@925c3f6
+08-29 12:34:10.411  7207  7243 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.widget.PopupWindow$PopupDecorView$$ExternalSyntheticLambda1@925c3f6
+08-29 12:34:10.412   725  2361 D WindowManager: setClientSurface Surface(name=VRI-PopupWindow:d00df2a#439)/@0x72bc505 for 413836f PopupWindow:d00df2a
+08-29 12:34:10.415   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.422   725   760 D CoreBackPreview: Window{413836f u0 PopupWindow:d00df2a}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a88995a, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+08-29 12:34:10.426   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.426   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.426   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.426  7207  7207 I Surface : Creating surface for consumer unnamed-7207-2 with slotExpansion=1 for 64 slots
+08-29 12:34:10.427  7207  7207 I Surface : Creating surface for consumer VRI[PopupWindow:d00df2a]#2(BLAST Consumer)2 with slotExpansion=1 for 64 slots
+08-29 12:34:10.430  7291  7291 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: SurfaceFlingerAIDL
+08-29 12:34:10.431  7291  7291 W libbinder.BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+08-29 12:34:10.431  7291  7291 W libbinder.ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+08-29 12:34:10.441   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.441   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.441   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.446   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.446   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.452   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+--------- beginning of kernel
+08-29 12:34:10.456     0     0 I servicemanager: Caller(pid=7291,uid=2000,sid=u:r:shell:s0) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+08-29 12:34:10.461     0     0 I servicemanager: Caller(pid=7291,uid=2000,sid=u:r:shell:s0) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+08-29 12:34:10.474   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.475   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.475   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.475   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.468     0     0 I servicemanager: Caller(pid=7291,uid=2000,sid=u:r:shell:s0) Found mapper/ranchu in device VINTF manifest.
+08-29 12:34:10.488  7207  7207 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+08-29 12:34:10.491   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.491   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.491   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.491   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.491   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.497  7291  7292 W libc    : Access denied finding property "vendor.mesa.virtgpu.kumquat"
+08-29 12:34:10.506   725   760 W InputChannel-JNI: Channel already disposed.
+08-29 12:34:10.508   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.508   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.508   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.508   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.546   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.546   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.546   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.565  1782  2046 E SatelliteController: isSatelliteEnabled: mIsSatelliteEnabled=null
+08-29 12:34:10.565  1782  2046 D SatelliteController: isInCarrierRoamingNbIotNtn: satellite is disabled
+08-29 12:34:10.565  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: Checking connect type from PLMN config for subId: 1
+08-29 12:34:10.565  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:10.566  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:10.566  1782  2046 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+08-29 12:34:10.566  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:10.566  1782  2046 D SatelliteController: isSatelliteSupportedViaCarrier: using CarrierConfig for subId=1, isAttachSupported=false
+08-29 12:34:10.566  1782  2046 D SatelliteController: getSatellitePerPlmnConfiguration: invalid subId or not supported via carrier.
+08-29 12:34:10.566  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: config: null
+08-29 12:34:10.566  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:10.566  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:10.566  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectTypeViaConfigUpdater: return null (satelliteConfig is null)
+08-29 12:34:10.567  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:10.567  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+08-29 12:34:10.567  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:10.567  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:10.567  1782  2046 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+08-29 12:34:10.568  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:10.568  1782  2046 D SatelliteController: isSatelliteSupportedViaCarrier: using CarrierConfig for subId=1, isAttachSupported=false
+08-29 12:34:10.568  1782  2046 D SatelliteController: isInSatelliteModeForCarrierRoaming: subId=1, connectType=0, result=false
+08-29 12:34:10.568  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: Checking connect type from PLMN config for subId: 1
+08-29 12:34:10.568  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:10.568  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:10.568  1782  2046 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+08-29 12:34:10.569  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:10.569  1782  2046 D SatelliteController: isSatelliteSupportedViaCarrier: using CarrierConfig for subId=1, isAttachSupported=false
+08-29 12:34:10.569  1782  2046 D SatelliteController: getSatellitePerPlmnConfiguration: invalid subId or not supported via carrier.
+08-29 12:34:10.569  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: config: null
+08-29 12:34:10.569  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:10.569  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:10.569  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectTypeViaConfigUpdater: return null (satelliteConfig is null)
+08-29 12:34:10.569  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:10.569  1782  2046 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+08-29 12:34:10.569  1782  2046 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+08-29 12:34:10.569  1782  2046 V SatelliteController: satelliteConfigParser is not ready
+08-29 12:34:10.569  1782  2046 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+08-29 12:34:10.570  1782  2046 D SatelliteController: getConfigForSubId: subId= 1, config= PersistableBundle[{satellite_esos_supported_bool=false, satellite_connection_hysteresis_sec_int=180, satellite_supported_disaster_plmn_string_array=[], regional_satellite_earfcn_bundle=PersistableBundle[{}], satellite_entitlement_supported_bool=false, satellite_supported_emergency_plmn_string_array=[], satellite_configs_per_plmn_bundle=PersistableBundle[{}], satellite_sos_max_datagram_size_bytes_int=255, satellite_supported_msg_apps_string_array=[com.google.android.apps.messaging], satellite_connected_notification_throttle_millis_int=604800000, satellite_display_name_string=, satellite_roaming_p2p_sms_inactivity_timeout_sec_int=180, satellite_roaming_turn_off_session_for_emergency_call_bool=true, emergency_messaging_supported_bool=false, carrier_roaming_satellite_emergency_messaging_provider_per_country_bundle=PersistableBundle[{}], satellite_data_support_mode_int=0, carrier_roaming_ntn_connect_type_int=0, satellite_attach_supported_bool=false, carrier_roaming_satellite_emergency_messaging_redirection_destination_string=, satellite_nidd_apn_name_string=, carrier_supported_satellite_services_per_provider_bundle=PersistableBundle[{310830=[2, 3, 6]}], satellite_roaming_esos_inactivity_timeout_sec_int=300, carrier_supported_satellite_notification_hysteresis_sec_int=180, carrier_config_applied_bool=true, carrier_roaming_ntn_emergency_call_to_satellite_handover_type_int=2, carrier_roaming_satellite_default_services_int_array=[2, 3, 6], imsserviceentitlement.entitlement_server_url_string=, emergency_call_to_satellite_t911_handover_timeout_millis_int=30000, satellite_roaming_p2p_sms_supported_bool=false, carrier_config_version_string=, satellite_roaming_screen_off_inactivity_timeout_sec_int=30}]
+08-29 12:34:10.570  1782  2046 D SatelliteController: isSatelliteSupportedViaCarrier: using CarrierConfig for subId=1, isAttachSupported=false
+08-29 12:34:10.570  1782  2046 D SatelliteController: isInSatelliteModeForCarrierRoaming: subId=1, connectType=0, result=false
+08-29 12:34:10.575   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.575   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.575   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.581   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:10.885   558   558 I adbd    : adbd service requested 'shell,v2,TERM=dumb,raw:uiautomator dump /sdcard/relaunch-with-metro.xml'
+08-29 12:34:11.015  7294  7294 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+08-29 12:34:11.024  7294  7294 I AndroidRuntime: Using default boot image
+08-29 12:34:11.028  7294  7294 I AndroidRuntime: Leaving lock profiling enabled
+08-29 12:34:11.031  7294  7294 I app_process: Core platform API enforcement disabled by runtime option
+08-29 12:34:11.031  7294  7294 I app_process: Using generational CollectorTypeCMC GC.
+08-29 12:34:11.033   725  2361 W InputChannel-JNI: Channel already disposed.
+08-29 12:34:11.040   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.041   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.041   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.043  7207  7207 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.widget.PopupWindow$PopupDecorView$$ExternalSyntheticLambda1@96d133d
+08-29 12:34:11.044  7207  7243 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.widget.PopupWindow$PopupDecorView$$ExternalSyntheticLambda1@96d133d
+08-29 12:34:11.045   725  2361 D CoreBackPreview: Window{ab28fbd u0 PopupWindow:d59f801}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@12abd03, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+08-29 12:34:11.047   725  2361 D WindowManager: setClientSurface Surface(name=VRI-PopupWindow:d59f801#442)/@0x81b9480 for ab28fbd PopupWindow:d59f801
+08-29 12:34:11.048   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.053  7207  7207 I Surface : Creating surface for consumer unnamed-7207-3 with slotExpansion=1 for 64 slots
+08-29 12:34:11.055  7207  7207 I Surface : Creating surface for consumer VRI[PopupWindow:d59f801]#3(BLAST Consumer)3 with slotExpansion=1 for 64 slots
+08-29 12:34:11.057   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.057   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.057   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.074   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.074   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.074   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.090  7207  7207 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+08-29 12:34:11.092   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.092   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.092   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.092   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.107   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.108   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.108   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.111   725  2361 W InputChannel-JNI: Channel already disposed.
+08-29 12:34:11.114  7207  7207 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.widget.PopupWindow$PopupDecorView$$ExternalSyntheticLambda1@84fe371
+08-29 12:34:11.117  7207  7243 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.widget.PopupWindow$PopupDecorView$$ExternalSyntheticLambda1@84fe371
+08-29 12:34:11.118   725  2361 D CoreBackPreview: Window{612265f u0 PopupWindow:6986cf5}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@280f975, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+08-29 12:34:11.118   725   760 D WindowManager: setClientSurface Surface(name=VRI-PopupWindow:6986cf5#444)/@0x26a0d0a for 612265f PopupWindow:6986cf5
+08-29 12:34:11.124   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.124   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.124   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.130  7207  7207 I Surface : Creating surface for consumer unnamed-7207-4 with slotExpansion=1 for 64 slots
+08-29 12:34:11.130  7207  7207 I Surface : Creating surface for consumer VRI[PopupWindow:6986cf5]#4(BLAST Consumer)4 with slotExpansion=1 for 64 slots
+08-29 12:34:11.142   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.142   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.142   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.151   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.164  7207  7207 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+08-29 12:34:11.175   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.175   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.175   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.175   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.191   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.191   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.191   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.209   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.209   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.209   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.228  7294  7294 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+08-29 12:34:11.243  7294  7294 D nativeloader: Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+08-29 12:34:11.243  7294  7294 D app_process: u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/10/icu") succeeded. 
+08-29 12:34:11.243  7294  7294 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt78l.dat
+08-29 12:34:11.244  7294  7294 D nativeloader: Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+08-29 12:34:11.246  7294  7294 D nativeloader: Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+08-29 12:34:11.246  7294  7294 I app_process: Priority-to-niceness mapping: 19, 16, 13, 10, 0, -2, -4, -5, -6, -8
+08-29 12:34:11.247  7294  7294 W app_process: Unexpected CPU variant for x86: x86_64.
+08-29 12:34:11.247  7294  7294 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, pantherlake, default
+08-29 12:34:11.251   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.254  7294  7294 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*3661943408]#PCL[/system/framework/android.test.mock.jar*3417560545]} | PCL[])
+08-29 12:34:11.255  7294  7294 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*1195416633]{PCL[/system/framework/android.test.base.jar*3661943408]#PCL[/system/framework/android.test.mock.jar*3417560545]}#PCL[/system/framework/android.test.base.jar*3661943408]} | PCL[/system/framework/android.test.runner.jar*1195416633])
+08-29 12:34:11.289  7294  7294 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+08-29 12:34:11.289  7294  7294 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+08-29 12:34:11.298  7294  7294 I AconfigPackage: android.media.swcodec.flags is mapped to com.android.media.swcodec
+08-29 12:34:11.299  7294  7294 I AconfigPackage: com.android.permission.flags is mapped to com.android.permission
+08-29 12:34:11.299  7294  7294 I AconfigPackage: com.android.permissioncontroller.flags is mapped to com.android.permission
+08-29 12:34:11.299  7294  7294 I AconfigPackage: com.google.android.widevine.flags is mapped to com.google.android.widevine
+08-29 12:34:11.299  7294  7294 I AconfigPackage: com.android.icu is mapped to com.android.i18n
+08-29 12:34:11.299  7294  7294 I AconfigPackage: com.android.appsearch.flags is mapped to com.android.appsearch
+08-29 12:34:11.299  7294  7294 I AconfigPackage: com.android.uprobestats.flags is mapped to com.android.uprobestats
+08-29 12:34:11.299  7294  7294 I AconfigPackage: android.uprobestats.mainline.flags is mapped to com.android.uprobestats
+08-29 12:34:11.300  7294  7294 I AconfigPackage: com.android.crashrecovery.flags is mapped to com.android.crashrecovery
+08-29 12:34:11.300  7294  7294 I AconfigPackage: android.provider.flags is mapped to com.android.configinfrastructure
+08-29 12:34:11.300  7294  7294 I AconfigPackage: com.android.server.deviceconfig is mapped to com.android.configinfrastructure
+08-29 12:34:11.300  7294  7294 I AconfigPackage: com.android.art.flags is mapped to com.android.art
+08-29 12:34:11.300  7294  7294 I AconfigPackage: com.android.art.rw.flags is mapped to com.android.art
+08-29 12:34:11.300  7294  7294 I AconfigPackage: com.android.libcore is mapped to com.android.art
+08-29 12:34:11.300  7294  7294 I AconfigPackage: android.telecom.flags is mapped to com.android.telephonycore
+08-29 12:34:11.300  7294  7294 I AconfigPackage: com.android.internal.telecom.flags is mapped to com.android.telephonycore
+08-29 12:34:11.300  7294  7294 I AconfigPackage: com.android.telephony.flags is mapped to com.android.telephonycore
+08-29 12:34:11.301  7294  7294 I AconfigPackage: com.android.media.extractor.flags is mapped to com.android.media
+08-29 12:34:11.301  7294  7294 I AconfigPackage: com.android.media.metrics.flags is mapped to com.android.media
+08-29 12:34:11.301  7294  7294 I AconfigPackage: com.android.media.mainline.flags is mapped to com.android.media
+08-29 12:34:11.301  7294  7294 I AconfigPackage: com.android.wifi.flags is mapped to com.android.wifi
+08-29 12:34:11.301  7294  7294 I AconfigPackage: com.android.org.conscrypt.flags is mapped to com.android.conscrypt
+08-29 12:34:11.301  7294  7294 I AconfigPackage: com.android.org.conscrypt.net.flags is mapped to com.android.conscrypt
+08-29 12:34:11.302  7294  7294 I AconfigPackage: com.android.healthfitness.flags is mapped to com.android.healthfitness
+08-29 12:34:11.302  7294  7294 I AconfigPackage: com.android.healthfitness.beta is mapped to com.android.healthfitness
+08-29 12:34:11.302  7294  7294 I AconfigPackage: com.android.ipsec.flags is mapped to com.android.ipsec
+08-29 12:34:11.302  7294  7294 I AconfigPackage: com.android.nfc.module.flags is mapped to com.android.nfcservices
+08-29 12:34:11.302  7294  7294 I AconfigPackage: com.android.nfc.module.nonexported.flags is mapped to com.android.nfcservices
+08-29 12:34:11.302  7294  7294 I AconfigPackage: com.android.adservices.ondevicepersonalization.flags is mapped to com.android.ondevicepersonalization
+08-29 12:34:11.303  7294  7294 I AconfigPackage: com.android.scheduling.flags is mapped to com.android.scheduling
+08-29 12:34:11.303  7294  7294 I AconfigPackage: com.android.adbd.flags is mapped to com.android.adbd
+08-29 12:34:11.303  7294  7294 I AconfigPackage: com.android.bluetooth.beta.flags is mapped to com.android.bt
+08-29 12:34:11.303  7294  7294 I AconfigPackage: com.android.bluetooth.flags is mapped to com.android.bt
+08-29 12:34:11.304  7294  7294 I AconfigPackage: com.android.devicelock.flags is mapped to com.android.devicelock
+08-29 12:34:11.304  7294  7294 I AconfigPackage: android.os.profiling is mapped to com.android.profiling
+08-29 12:34:11.304  7294  7294 I AconfigPackage: android.os.profiling.anomaly.beta.flags is mapped to com.android.profiling
+08-29 12:34:11.304  7294  7294 I AconfigPackage: android.os.profiling.anomaly.flags is mapped to com.android.profiling
+08-29 12:34:11.304  7294  7294 I AconfigPackage: com.android.os.statsd.flags is mapped to com.android.os.statsd
+08-29 12:34:11.305  7294  7294 I AconfigPackage: com.android.webapp.flags is mapped to com.android.webapp
+08-29 12:34:11.306  7294  7294 I AconfigPackage: com.android.rkpd.flags is mapped to com.android.rkpd
+08-29 12:34:11.306  7294  7294 I AconfigPackage: com.android.cellbroadcastreceiver.flags is mapped to com.android.cellbroadcast
+08-29 12:34:11.307  7294  7294 I AconfigPackage: com.android.adservices.flags is mapped to com.android.adservices
+08-29 12:34:11.307  7294  7294 I AconfigPackage: com.android.sdksandbox.flags is mapped to com.android.adservices
+08-29 12:34:11.307  7294  7294 I AconfigPackage: android.app.sdksandbox.flags is mapped to com.android.adservices
+08-29 12:34:11.307  7294  7294 I AconfigPackage: com.android.uwb.flags is mapped to com.android.uwb
+08-29 12:34:11.307  7294  7294 I AconfigPackage: com.android.ranging.flags is mapped to com.android.uwb
+08-29 12:34:11.308  7294  7294 I AconfigPackage: com.android.npumanager is mapped to com.android.npumanager
+08-29 12:34:11.308  7294  7294 I AconfigPackage: com.android.signature.flags is mapped to com.android.mediaprovider
+08-29 12:34:11.308  7294  7294 I AconfigPackage: com.android.providers.media.flags is mapped to com.android.mediaprovider
+08-29 12:34:11.308  7294  7294 I AconfigPackage: android.graphics.pdf.flags is mapped to com.android.mediaprovider
+08-29 12:34:11.308  7294  7294 I AconfigPackage: android.graphics.pdf.flags.readonly is mapped to com.android.mediaprovider
+08-29 12:34:11.308  7294  7294 I AconfigPackage: com.android.tethering.mainline.beta is mapped to com.android.tethering
+08-29 12:34:11.308  7294  7294 I AconfigPackage: android.net.http is mapped to com.android.tethering
+08-29 12:34:11.308  7294  7294 I AconfigPackage: com.android.tethering.readonly.flags is mapped to com.android.tethering
+08-29 12:34:11.308  7294  7294 I AconfigPackage: android.net.vcn is mapped to com.android.tethering
+08-29 12:34:11.308  7294  7294 I AconfigPackage: com.android.net.flags is mapped to com.android.tethering
+08-29 12:34:11.308  7294  7294 I AconfigPackage: com.android.tethering.flags is mapped to com.android.tethering
+08-29 12:34:11.308  7294  7294 I AconfigPackage: com.android.tethering.beta.test is mapped to com.android.tethering
+08-29 12:34:11.308  7294  7294 I AconfigPackage: com.android.nearby.flags is mapped to com.android.tethering
+08-29 12:34:11.308  7294  7294 I AconfigPackage: com.android.net.thread.flags is mapped to com.android.tethering
+08-29 12:34:11.308  7294  7294 I AconfigPackage: android.net.http.flags is mapped to com.android.tethering
+08-29 12:34:11.309  7294  7294 I AconfigPackage: com.android.system.virtualmachine.flags is mapped to com.android.virt
+08-29 12:34:11.309  7294  7294 E FeatureFlagsImplExport: android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+08-29 12:34:11.311  7294  7294 D UiAutomationConnection: Created on user UserHandle{0}
+08-29 12:34:11.311  7294  7294 I UiAutomation: Initialized for user 0 on display 0
+08-29 12:34:11.311  7294  7294 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+08-29 12:34:11.313   725  2361 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+08-29 12:34:11.313   725  2361 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation, flags=0x0) when called by user 0
+08-29 12:34:11.313   725  2361 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+08-29 12:34:11.315   725  2361 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+08-29 12:34:11.318  2244  3234 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+08-29 12:34:11.318   725  2361 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+08-29 12:34:11.319   725  2361 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+08-29 12:34:11.320   725  2361 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+08-29 12:34:11.320  2244  2588 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+08-29 12:34:11.320  2244  2588 I AiAiEcho: EchoTargets: 
+08-29 12:34:11.320  2244  2588 I AiAiEcho: Filtered by AiAi flag check: 
+08-29 12:34:11.320  2244  2588 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+08-29 12:34:11.320  2244  2588 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+08-29 12:34:11.321  2244  2588 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+08-29 12:34:11.321  2244  2588 I AiAiEcho: EchoTargets: 
+08-29 12:34:11.321  2244  2588 I AiAiEcho: Filtered by AiAi flag check: 
+08-29 12:34:11.321  2244  2588 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+08-29 12:34:11.322   725  2361 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+08-29 12:34:11.322  2244  2588 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+08-29 12:34:11.322   725  2361 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+08-29 12:34:11.322  2244  2588 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+08-29 12:34:11.322  2244  2588 I AiAiEcho: EchoTargets: 
+08-29 12:34:11.322  2244  2588 I AiAiEcho: Filtered by AiAi flag check: 
+08-29 12:34:11.322  2244  2588 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+08-29 12:34:11.323   725  2361 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+08-29 12:34:11.323  2244  2588 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+08-29 12:34:11.325  2244  2588 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+08-29 12:34:11.325  2244  2588 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+08-29 12:34:11.326  2244  2588 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+08-29 12:34:11.326   725  2361 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+08-29 12:34:11.326  1585  1747 I AmbientCueRepository: Receiving SmartSpace targets # 0
+08-29 12:34:11.329   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.330   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.330   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.330   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.330   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.330   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.330   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.330   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.331   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.331   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.331  7294  7308 V UiAutomation: Init UiAutomation@a59eb8b[id=19, displayId=0, flags=0]
+08-29 12:34:11.331   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.331   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.331   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.331   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.333   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.333   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.335   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.335   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.335   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.335   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.335   725   760 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+08-29 12:34:11.335   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.335   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.336   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.337   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.337   725   725 D BatterySaverPolicy: accessibility changed to true, updating policy.
+08-29 12:34:11.339   725   760 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+08-29 12:34:11.339   725   760 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+08-29 12:34:11.339   725   760 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+08-29 12:34:11.339   725   760 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+08-29 12:34:11.339   725   760 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+08-29 12:34:11.339   725   760 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+08-29 12:34:11.339   725   760 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+08-29 12:34:11.340   725   760 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+08-29 12:34:11.340  2244  3234 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+08-29 12:34:11.341   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.341   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.341   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.341  2244  2588 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+08-29 12:34:11.341  2244  2588 I AiAiEcho: EchoTargets: 
+08-29 12:34:11.341  2244  2588 I AiAiEcho: Filtered by AiAi flag check: 
+08-29 12:34:11.341  2244  2588 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+08-29 12:34:11.342  2244  2588 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+08-29 12:34:11.342  2244  2588 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+08-29 12:34:11.342  2244  2588 I AiAiEcho: EchoTargets: 
+08-29 12:34:11.342  2244  2588 I AiAiEcho: Filtered by AiAi flag check: 
+08-29 12:34:11.342  2244  2588 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+08-29 12:34:11.343  2244  2588 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+08-29 12:34:11.344   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.343  2244  2588 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+08-29 12:34:11.344  2244  2588 I AiAiEcho: EchoTargets: 
+08-29 12:34:11.344  2244  2588 I AiAiEcho: Filtered by AiAi flag check: 
+08-29 12:34:11.344  2244  2588 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+08-29 12:34:11.345  2244  2588 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+08-29 12:34:11.345  2244  2588 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+08-29 12:34:11.346   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.347  2244  2588 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+08-29 12:34:11.349  1585  1747 I AmbientCueRepository: Receiving SmartSpace targets # 0
+08-29 12:34:11.350   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.350   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.350   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.350   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.353   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.355   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.355   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.355   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.355   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.356   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.356   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.356   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.356   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.357  2244  2588 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+08-29 12:34:11.357   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.357   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.357   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.358   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.359   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:11.368   725  1941 D AccessibilityManagerService: .getAccessibilityShortcutTargets {shortcutType=32, userId=0}
+08-29 12:34:11.374   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.374   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.374   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.455   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:11.685  1866  1866 D wpa_supplicant: nl80211: Drv Event 64 (NL80211_CMD_NOTIFY_CQM) received for wlan0
+08-29 12:34:11.685  1866  1866 D wpa_supplicant: nl80211: Beacon loss event
+08-29 12:34:11.685  1866  1866 D wpa_supplicant: wlan0: Event BEACON_LOSS (53) received
+08-29 12:34:11.685  1866  1866 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+08-29 12:34:12.364  2224  2412 W MediaProvider: isAppCloneUserPair for user 0: false
+08-29 12:34:12.398  7294  7294 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@18abe; boundsInParent: Rect(0, 0 - 1440, 0); boundsInScreen: Rect(0, 0 - 1440, 0); boundsInWindow: Rect(0, 0 - 1440, 0); packageName: com.valetpos; className: android.widget.LinearLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+08-29 12:34:12.415  7294  7294 W AccessibilityNodeInfoDumper: Fetch time: 57ms
+08-29 12:34:12.417   725  1941 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+08-29 12:34:12.419   725  1941 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+08-29 12:34:12.419   725  1941 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+08-29 12:34:12.419   725  1941 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+08-29 12:34:12.419   725  1941 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+08-29 12:34:12.419   725  1941 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+08-29 12:34:12.419   725  1941 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+08-29 12:34:12.419   725  1941 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+08-29 12:34:12.419   725  1941 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+08-29 12:34:12.419   725  1941 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+08-29 12:34:12.419  2244  3234 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+08-29 12:34:12.420  2244  2588 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+08-29 12:34:12.420  2244  2588 I AiAiEcho: EchoTargets: 
+08-29 12:34:12.420  2244  2588 I AiAiEcho: Filtered by AiAi flag check: 
+08-29 12:34:12.420  2244  2588 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+08-29 12:34:12.421  2244  2588 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+08-29 12:34:12.421  2244  2588 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+08-29 12:34:12.421  2244  2588 I AiAiEcho: EchoTargets: 
+08-29 12:34:12.421  2244  2588 I AiAiEcho: Filtered by AiAi flag check: 
+08-29 12:34:12.421  2244  2588 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+08-29 12:34:12.421  2244  2588 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+08-29 12:34:12.421  2244  2588 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+08-29 12:34:12.422   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.422   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.422  7294  7306 W libbinder.IPCThreadState: call to talkWithDriver in joinThreadPool returned error: -9 (Bad file descriptor), FD: -1
+08-29 12:34:12.422   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.422   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.422  7294  7305 W libbinder.IPCThreadState: call to talkWithDriver in joinThreadPool returned error: -9 (Bad file descriptor), FD: -1
+08-29 12:34:12.423   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.423   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.423   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.423   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.423  7294  7294 D AndroidRuntime: Shutting down VM
+08-29 12:34:12.423   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.423   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.424   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.424   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.424   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.424   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.425  2244  2588 I AiAiEcho: EchoTargets: 
+08-29 12:34:12.425  2244  2588 I AiAiEcho: Filtered by AiAi flag check: 
+08-29 12:34:12.425  2244  2588 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+08-29 12:34:12.426   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.427   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.427  2244  2588 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+08-29 12:34:12.428  2244  2588 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+08-29 12:34:12.428  2244  2588 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+08-29 12:34:12.429  7294  7309 W libbinder.IPCThreadState: call to talkWithDriver in joinThreadPool returned error: -9 (Bad file descriptor), FD: -1
+08-29 12:34:12.430   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.430   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.430   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.430   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.430  1585  1747 I AmbientCueRepository: Receiving SmartSpace targets # 0
+08-29 12:34:12.430   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.430   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.431   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.431   725   725 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:12.431   725   725 D BatterySaverPolicy: accessibility changed to false, updating policy.
+08-29 12:34:12.432  2244  2588 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+08-29 12:34:12.441   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:12.441   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:12.441   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:12.446   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:12.458   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:12.458   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:12.458   542   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:12.486   725  2361 D ActivityManager: sync unfroze 2377 com.google.android.gms for 6
+08-29 12:34:12.491   725  2361 D ActivityManager: sync unfroze 4903 com.google.android.adservices.api for 6
+08-29 12:34:12.506  1926  6589 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 1454 [CONTEXT service_id=218 ]
+08-29 12:34:12.507   725   760 W ProcessStats: Tracking association SourceState{778d193 com.google.android.gms/10228 ImpBg #7716} whose proc state 6 is better than process ProcessState{aa6f341 com.google.android.adservices.api/10215 pkg=com.google.android.adservices.api} proc state 14 (3 skipped)
+08-29 12:34:12.515  1926  6457 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 51 uptime_millis: 51 exec_start_elapsed_seconds: 1454 [CONTEXT service_id=218 ]
+08-29 12:34:12.531   479   517 I netd    : tetherGetStats() -> {[]} <0.63ms>
+08-29 12:34:12.548   542   582 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+08-29 12:34:13.060   725  1456 D WifiClientModeImpl[129527:wlan0]: updateLinkLayerStatsRssiSpeedFrequencyCapabilities rssi=-50 TxLinkspeed=1 freq=2447 RxLinkSpeed=2
+08-29 12:34:13.060   725  1456 D WifiClientModeImpl[129527:wlan0]: reported txKbps 12000 rxKbps 30000
+08-29 12:34:13.061   725  1456 D WifiDataStall: tx tput in kbps: -1
+08-29 12:34:13.061   725  1456 D WifiDataStall: rx tput in kbps: -1
+08-29 12:34:13.061   725  1456 V WifiConfigManager: Updating scan detail cache freq=2447 BSSID=00:13:10:85:fe:01 RSSI=-50 for "AndroidWifi"NONE
+08-29 12:34:13.061   725  1456 E WifiDataStall: Ignore this poll. newStats: null txLinkSpeedMbps: 1 rxLinkSpeedMbps: 2 rssi: -50 connectionCapabilities: com.android.server.wifi.WifiNative$ConnectionCapabilities@91d28fe
+08-29 12:34:13.061   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:34:13.061   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:34:13.061   725  1456 D WifiThroughputPredictor:  utilization (LLS) 80 isBluetoothConnected: false final utilization: 80
+08-29 12:34:13.061   725  1456 D WifiThroughputPredictor:  BW: 0 RSSI: -50 Nss: 1 Mode: 1 symDur: 4000 snrDb 30 bitPerTone: 4500 rate: 54 throughput: 11
+08-29 12:34:13.062   725  1492 I AdbWifiNetworkMonitor: Wi-Fi network available
+08-29 12:34:13.062   725  1492 I AdbWifiNetworkMonitor: Received the same Wi-Fi SSID. Ignoring.
+08-29 12:34:13.065   725  1456 D WifiScoreCard: BSSID update SIGNAL_POLL ID: 545624613 SSID: "AndroidWifi", BSSID: 00:13:10:85:fe:01, MAC: 02:15:b2:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 11Mbps, Calculated Tx : 0Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 11Mbps, Calculated Rx : 0Mbps, Frequency: 2447MHz, Net ID: 0, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"AndroidWifi"openMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>
+08-29 12:34:13.065   725  1456 D WifiScoreCard: txRate: 5 txSpeed: 1
+08-29 12:34:13.065   725  1456 D WifiScoreCard: network update SIGNAL_POLL "AndroidWifi" ID: 1582503498 RSSI -50 txSpeed 1
+08-29 12:34:13.065   725  1456 D WifiClientModeImpl[129527:wlan0]:  ClientModeImpl$L2ConnectedState screen=on 3 0 "AndroidWifi" 00:13:10:85:fe:01 rssi=-50 f=2447 sc=100 link=1 tx=4.6, 0.0, 0.0 rx=6.1 bcn=0 [on:0 tx:0 rx:0 period:3006] from screen [on:0 period:1282457929] score=100
+08-29 12:34:13.066   479   517 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.15ms>
+08-29 12:34:13.067   479   517 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 5) <0.07ms>
+08-29 12:34:13.068   725   760 I WifiService: getWifiEnabledState uid=10196 state=3
+08-29 12:34:13.068   479   517 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.05ms>
+08-29 12:34:13.069   479   517 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 5) <0.04ms>
+08-29 12:34:13.071   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:13.071   725  1463 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+08-29 12:34:13.076   725   760 I WifiService: getConnectionInfo uid=10228
+08-29 12:34:13.077   725   760 V WifiService: Clearing REDACT_FOR_LOCAL_MAC_ADDRESS for com.google.android.gms(uid=10228)
+08-29 12:34:13.079   725   760 V WifiPermissionsUtil: checkCallersLocationPermission(com.google.android.gms): ok because uid 10228 has app-op android:fine_location
+08-29 12:34:13.079   725   760 V WifiService: Clearing REDACT_FOR_ACCESS_FINE_LOCATION for com.google.android.gms(uid=10228)
+08-29 12:34:13.079  1698  1924 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+08-29 12:34:13.080  1926  3006 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+08-29 12:34:13.080  1926  3006 W libbinder.Binder: Large reply transaction of 1056768 bytes, interface descriptor , function: UNKNOWN_FUNCTION_NAME, code: 1, flags: 17
+08-29 12:34:13.080   479   517 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.06ms>
+08-29 12:34:13.081   479   517 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.03ms>
+08-29 12:34:13.081   479   517 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.05ms>
+08-29 12:34:13.082   479   517 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.03ms>
+08-29 12:34:13.083  1698  1924 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+08-29 12:34:13.319   558   558 I adbd    : adbd service requested 'exec:cat '/sdcard/relaunch-with-metro.xml''
+08-29 12:34:13.386   558   558 I adbd    : adbd service requested 'shell,v2,TERM=dumb:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-t' '800' '-v' 'threadtime''

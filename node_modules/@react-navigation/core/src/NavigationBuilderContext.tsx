@@ -2,6 +2,7 @@ import type {
   NavigationAction,
   NavigationState,
   ParamListBase,
+  PartialState,
 } from '@react-navigation/routers';
 import * as React from 'react';
 
@@ -46,7 +47,10 @@ export type FocusedNavigationListener = <T>(
 
 export type GetStateListener = () => NavigationState;
 
-export type ChildBeforeRemoveListener = (action: NavigationAction) => boolean;
+export type ChildBeforeRemoveListener = (
+  action: NavigationAction,
+  nextState: NavigationState | PartialState<NavigationState> | undefined
+) => boolean;
 
 /**
  * Context which holds the required helpers needed to build nested navigators.
@@ -64,13 +68,15 @@ export const NavigationBuilderContext = React.createContext<{
     event: NavigationContainerEventMap['__unsafe_event__']['data']
   ) => void;
   onOptionsChange: (options: object) => void;
+  getIsStateEmitted: () => boolean;
   scheduleUpdate: (callback: () => void) => void;
   flushUpdates: () => void;
-  stackRef?: React.MutableRefObject<string | undefined>;
+  stackRef?: React.RefObject<string | undefined>;
 }>({
   onDispatchAction: () => undefined,
   onEmitEvent: () => undefined,
   onOptionsChange: () => undefined,
+  getIsStateEmitted: () => false,
   scheduleUpdate: () => {
     throw new Error("Couldn't find a context for scheduling updates.");
   },
