@@ -883,17 +883,20 @@ describe('first administrator bootstrap', () => {
     expect(await t.query(api.admin.getBootstrapAvailable, {})).toBe(false);
   });
 
-  it('keeps bootstrap closed when a credential-linked administrator already exists', async () => {
+  it('allows the configured one-time administrator setup when another linked administrator exists', async () => {
+    vi.stubEnv('CONVEX_SITE_URL', 'https://auth.example.test');
     const t = convexTest(schema, modules);
     const identity = makeIdentity('linked-bootstrap-admin', 'linked-bootstrap-session');
-    await seedUserAndLocation(t, identity, 'admin');
+    const existingAdmin = await seedUserAndLocation(t, identity, 'admin');
 
-    expect(await t.query(api.admin.getBootstrapAvailable, {})).toBe(false);
-    await expect(t.mutation(internal.admin.finishFirstAdminBootstrap, {
+    expect(existingAdmin.userId).toBeTruthy();
+    expect(await t.query(api.admin.getBootstrapAvailable, {})).toBe(true);
+    await t.mutation(internal.admin.finishFirstAdminBootstrap, {
       authUserId: 'second-admin-id',
       email: 'second-admin@example.test',
       name: 'Second admin',
-    })).rejects.toThrow('ADMIN_ALREADY_INITIALIZED');
+    });
+    expect(await t.query(api.admin.getBootstrapAvailable, {})).toBe(false);
   });
 
   it('keeps bootstrap closed after the one-time setup marker is written', async () => {

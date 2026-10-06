@@ -11,9 +11,9 @@ This Next.js app uses the shared Better Auth account and protected Convex admini
 
 The two `NEXT_PUBLIC_CONVEX_*` values are public deployment addresses. Never put an administrator setup secret, Brevo key, or other server credential in this file or in a `NEXT_PUBLIC_*` variable.
 
-## First administrator
+## One-time configured administrator
 
-Set `ADMIN_BOOTSTRAP_EMAIL`, a new, high-entropy `ADMIN_BOOTSTRAP_SECRET`, and the exact `ADMIN_DASHBOARD_ORIGIN` as server environment variables on the Convex deployment. Do not reuse a password or secret pasted into a chat. The bootstrap secret must contain at least 32 characters and is accepted only once. `ADMIN_DASHBOARD_ORIGIN` must be one HTTP or HTTPS origin without a path, such as `https://admin.example.com`; do not use a wildcard. The first administrator must sign in with the configured email, enable authenticator MFA, then complete the one-time setup form. The server rejects bootstrap after setup is complete or a credential-linked administrator exists.
+Set `ADMIN_BOOTSTRAP_EMAIL`, a new, high-entropy `ADMIN_BOOTSTRAP_SECRET`, and the exact `ADMIN_DASHBOARD_ORIGIN` as server environment variables on the Convex deployment. Do not reuse a password or secret pasted into a chat. The bootstrap secret must contain at least 32 characters and is accepted only once. `ADMIN_DASHBOARD_ORIGIN` must be one HTTP or HTTPS origin without a path, such as `https://admin.example.com`; do not use a wildcard. The configured administrator must use the configured email, enable authenticator MFA, then complete the one-time setup form. Existing administrator accounts do not block this one-time setup; the server closes setup after it creates or links the configured account.
 
 The dashboard does not initialize an administrator when either URL is missing. Management queries and mutations also reject non-admin or non-MFA sessions on the server. A hidden button or client-side role value cannot grant access.
 

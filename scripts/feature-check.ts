@@ -221,7 +221,13 @@ function run() {
   assert.match(adminBootstrap, /ADMIN_BOOTSTRAP_SECRET/);
   assert.match(adminBootstrap, /ADMIN_BOOTSTRAP_EMAIL/);
   assert.match(adminBootstrap, /safeSecretEquals/);
-  assert.match(getConvexExportBlock(adminBackend, 'finishFirstAdminBootstrap'), /adminSetup.*unique\(\)/s);
+  const bootstrapAvailabilityStart = adminBackend.indexOf('async function canBootstrapConfiguredAdministrator');
+  const bootstrapAvailabilityEnd = adminBackend.indexOf('\n}', bootstrapAvailabilityStart);
+  const bootstrapAvailability = adminBackend.slice(bootstrapAvailabilityStart, bootstrapAvailabilityEnd + 2);
+  assert.match(bootstrapAvailability, /query\('adminSetup'\)[\s\S]*?unique\(\)/);
+  assert.match(bootstrapAvailability, /return setup === null/);
+  assert.doesNotMatch(bootstrapAvailability, /users|authUserId|authTokenIdentifier/);
+  assert.match(getConvexExportBlock(adminBackend, 'finishFirstAdminBootstrap'), /canBootstrapConfiguredAdministrator/);
   assert.match(adminBootstrap, /ADMIN_ALREADY_INITIALIZED/);
   assert.doesNotMatch(rootNavigator, /store\.authenticated \|\| isAuthenticated/, 'Auth gate should wait for resolved profile and location');
   assert.match(rootNavigator, /onLogin={async \(\) => {[\s\S]*if \(result.error\) \{/);

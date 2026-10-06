@@ -84,7 +84,7 @@ export function AdminAuthPanel() {
           <div><div className="brand-title">Valet Operations</div><div className="brand-subtitle">Protected administrator sign-in</div></div>
         </div>
         <div className="eyebrow">Valet POS · Operations</div>
-        <h1 id="auth-title">{requiresTwoFactor ? 'Verify your sign-in' : mode === 'bootstrap' ? 'Create the first administrator' : 'Sign in'}</h1>
+        <h1 id="auth-title">{requiresTwoFactor ? 'Verify your sign-in' : mode === 'bootstrap' ? 'Create the configured administrator' : 'Sign in'}</h1>
         <p className="page-description auth-copy">
           {requiresTwoFactor
             ? 'Enter a code from your authenticator app. A backup code also works once.'
@@ -110,7 +110,7 @@ export function AdminAuthPanel() {
           mode === 'bootstrap'
             ? <button className="text-button" type="button" onClick={() => { setMode('signIn'); setPassword(''); setPasswordConfirm(''); setSetupSecret(''); setError(''); }}>Back to sign in</button>
             : bootstrapAvailable
-              ? <button className="text-button" type="button" onClick={() => { setMode('bootstrap'); setNotice(''); setError(''); }}>Create the first administrator</button>
+              ? <button className="text-button" type="button" onClick={() => { setMode('bootstrap'); setNotice(''); setError(''); }}>Create the configured administrator</button>
               : null
         )}
         <p className="auth-footnote">Attendant accounts are created by an administrator. Public sign-up and password recovery links are disabled.</p>

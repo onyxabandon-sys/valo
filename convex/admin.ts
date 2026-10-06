@@ -132,13 +132,9 @@ async function findUserByEmail(ctx: ReadCtx, email: string) {
   return await ctx.db.query('users').withIndex('by_email', q => q.eq('email', email)).first();
 }
 
-async function canBootstrapFirstAdministrator(ctx: ReadCtx) {
+async function canBootstrapConfiguredAdministrator(ctx: ReadCtx) {
   const setup = await ctx.db.query('adminSetup').withIndex('by_key', q => q.eq('key', 'firstAdmin')).unique();
-  if (setup) return false;
-
-  const admins = await ctx.db.query('users').withIndex('by_role', q => q.eq('role', 'admin')).take(1001);
-  if (admins.length > 1000) return false;
-  return !admins.some(admin => admin.authUserId !== undefined || admin.authTokenIdentifier !== undefined);
+  return setup === null;
 }
 
 async function invalidateUserSessions(
@@ -203,20 +199,20 @@ export const getMyAdminStatus = query({
 export const isFirstAdminBootstrapAvailable = internalQuery({
   args: {},
   returns: v.boolean(),
-  handler: async ctx => await canBootstrapFirstAdministrator(ctx),
+  handler: async ctx => await canBootstrapConfiguredAdministrator(ctx),
 });
 
 export const getBootstrapAvailable = query({
   args: {},
   returns: v.boolean(),
-  handler: async ctx => await canBootstrapFirstAdministrator(ctx),
+  handler: async ctx => await canBootstrapConfiguredAdministrator(ctx),
 });
 
 export const finishFirstAdminBootstrap = internalMutation({
   args: { authUserId: v.string(), email: v.string(), name: v.string() },
   returns: v.id('users'),
   handler: async (ctx, args) => {
-    if (!await canBootstrapFirstAdministrator(ctx)) {
+    if (!await canBootstrapConfiguredAdministrator(ctx)) {
       throw new ConvexError({ code: 'ADMIN_ALREADY_INITIALIZED', message: 'Administrator setup has already been completed.' });
     }
 
@@ -258,7 +254,7 @@ export const finishFirstAdminBootstrap = internalMutation({
       });
     }
     await ctx.db.insert('adminSetup', { key: 'firstAdmin', userId, completedAt: now });
-    await writeAudit(ctx, userId, 'admin_bootstrap', 'admin', userId, 'Created or linked the first administrator account. Authenticator verification is required before management access.');
+    await writeAudit(ctx, userId, 'admin_bootstrap', 'admin', userId, 'Created or linked the configured administrator account. Authenticator verification is required before management access.');
     return userId;
   },
 });
@@ -284,7 +280,7 @@ export const bootstrapFirstAdmin = action({
     const password = validatePassword(args.password);
     const available = await ctx.runQuery(internal.admin.isFirstAdminBootstrapAvailable, {});
     if (!available) {
-      throw new ConvexError({ code: 'ADMIN_ALREADY_INITIALIZED', message: 'Administrator setup has already been completed.' });
+      throw new ConvexError({ code: 'ADMIN_ALREADY_INITIALIZED', message: 'The one-time administrator setup has already been completed.' });
     }
 
     let authUserId: string | undefined;
