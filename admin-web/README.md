@@ -5,7 +5,7 @@ This Next.js app uses the shared Better Auth account and protected Convex admini
 ## Local setup
 
 1. Copy `.env.example` to `.env.local` and set the Convex cloud and site URLs for the development deployment you intend to use.
-2. Install the locked dependencies with `npm ci`.
+2. From `admin-web`, run `npm ci --prefix ..` and then `npm ci` to install the locked root and admin dependencies. The Convex backend types are imported from outside this directory.
 3. Start the dashboard with `npm run dev`, then open `http://127.0.0.1:3000`.
 4. Run `npm run typecheck` and `npm run build` before sharing a build.
 
@@ -27,6 +27,8 @@ The dashboard does not initialize an administrator when either URL is missing. M
 - A dashboard account can sign in and manage records only after it has an active administrator profile and MFA. New admin invitations are not implemented.
 
 ## Deployment and external services
+
+The GitHub Actions workflow installs the locked root and admin dependencies, type checks, and builds this app on every push and pull request. Connect the GitHub repository to Vercel to enable automatic deployments for every push: use `admin-web` as the Root Directory, the Next.js framework preset, and enable “Include source files outside of the Root Directory in the Build Step” because the app imports generated API types from `convex/`. The Vercel install command installs both lockfiles so those shared Convex sources can resolve their dependencies. Set `main` as the production branch so Vercel deploys it to Production and other branches to Preview. Set `NEXT_PUBLIC_CONVEX_URL` and `NEXT_PUBLIC_CONVEX_SITE_URL` in the matching Vercel environments so the dashboard can connect to Convex.
 
 This repository does not confirm which Convex project should receive the schema or functions. Verify the team, project, environment, and recovery plan before setting remote environment variables or deploying.
 

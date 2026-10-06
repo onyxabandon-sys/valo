@@ -5,6 +5,7 @@
 .env.sunmi-device
 .expo/
 .convex/local/
+/.next/
 node_modules/
 android/.gradle/8.14.3/checksums/checksums.lock
 
