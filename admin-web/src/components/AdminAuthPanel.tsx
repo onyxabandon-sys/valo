@@ -1,9 +1,13 @@
 'use client';
 
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { useAction, useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
-import { authClient } from '@/lib/auth-client';
+import {
+  ADMIN_TWO_FACTOR_CHALLENGE_EVENT,
+  ADMIN_TWO_FACTOR_CHALLENGE_KEY,
+  authClient,
+} from '@/lib/auth-client';
 
 type AuthMode = 'signIn' | 'bootstrap';
 
@@ -27,6 +31,18 @@ export function AdminAuthPanel() {
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
 
+  useEffect(() => {
+    const restoreChallenge = () => {
+      if (window.sessionStorage.getItem(ADMIN_TWO_FACTOR_CHALLENGE_KEY) === 'true') {
+        setRequiresTwoFactor(true);
+      }
+    };
+
+    restoreChallenge();
+    window.addEventListener(ADMIN_TWO_FACTOR_CHALLENGE_EVENT, restoreChallenge);
+    return () => window.removeEventListener(ADMIN_TWO_FACTOR_CHALLENGE_EVENT, restoreChallenge);
+  }, []);
+
   const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (busy) return;
@@ -44,6 +60,7 @@ export function AdminAuthPanel() {
         if (sessionResult.error || !sessionResult.data?.session) {
           throw new Error('The code was accepted, but the sign-in session was not saved. Reload the page and sign in again.');
         }
+        window.sessionStorage.removeItem(ADMIN_TWO_FACTOR_CHALLENGE_KEY);
         setCode('');
         setRequiresTwoFactor(false);
         return;
@@ -67,9 +84,14 @@ export function AdminAuthPanel() {
         return;
       }
 
+      window.sessionStorage.removeItem(ADMIN_TWO_FACTOR_CHALLENGE_KEY);
       const result = await authClient.signIn.email({ email: normalizedEmail, password });
       if (result.error) throw new Error(result.error.message ?? 'Sign in failed. Check your credentials.');
-      if (result.data && 'twoFactorRedirect' in result.data && result.data.twoFactorRedirect === true) {
+      if (
+        (result.data && 'twoFactorRedirect' in result.data && result.data.twoFactorRedirect === true) ||
+        window.sessionStorage.getItem(ADMIN_TWO_FACTOR_CHALLENGE_KEY) === 'true'
+      ) {
+        window.sessionStorage.setItem(ADMIN_TWO_FACTOR_CHALLENGE_KEY, 'true');
         setRequiresTwoFactor(true);
         setPassword('');
       } else {
