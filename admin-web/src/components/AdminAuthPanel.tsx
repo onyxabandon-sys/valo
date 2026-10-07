@@ -40,6 +40,10 @@ export function AdminAuthPanel() {
           ? await authClient.twoFactor.verifyBackupCode({ code: normalizedCode })
           : await authClient.twoFactor.verifyTotp({ code: normalizedCode, trustDevice: false });
         if (result.error) throw new Error(result.error.message ?? 'That authenticator code was not accepted.');
+        const sessionResult = await authClient.getSession();
+        if (sessionResult.error || !sessionResult.data?.session) {
+          throw new Error('The code was accepted, but the sign-in session was not saved. Reload the page and sign in again.');
+        }
         setCode('');
         setRequiresTwoFactor(false);
         return;
@@ -68,6 +72,8 @@ export function AdminAuthPanel() {
       if (result.data && 'twoFactorRedirect' in result.data && result.data.twoFactorRedirect === true) {
         setRequiresTwoFactor(true);
         setPassword('');
+      } else {
+        throw new Error('Sign-in did not start the authenticator check. Reload the page and try again.');
       }
     } catch (submitError) {
       setError(messageFrom(submitError, 'The request failed. Check your connection and try again.'));
